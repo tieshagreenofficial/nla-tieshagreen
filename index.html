@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Next-Level Authority Challenge™ — Tiesha Green</title>
-<meta name="description" content="You know you're capable of more. So why the hell are you still stuck? Three days to uncover what's really keeping you stuck and start showing up with the authority you already have.">
+<meta name="description" content="You know you're capable of more. So why are you still stuck? Three days to uncover what's really keeping you stuck and start showing up with the authority you already have.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,12 +17,13 @@
   }
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
   html{scroll-behavior:smooth;}
-  body{font-family:var(--font-body);color:var(--ink);background:var(--cream);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased;}
+  body{font-family:var(--font-body);color:var(--ink);background:var(--cream);line-height:1.7;font-size:18px;-webkit-font-smoothing:antialiased;}
   h1,h2,h3,h4{font-family:var(--font-display);line-height:1.15;font-weight:600;}
   img{max-width:100%;display:block;}
   a{color:inherit;}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
-  .eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-3);display:flex;align-items:center;gap:12px;margin-bottom:18px;}
+  .wrap-narrow{max-width:700px;margin:0 auto;padding:0 28px;}
+  .eyebrow{font-size:.82rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-3);display:flex;align-items:center;gap:12px;margin-bottom:18px;}
   .eyebrow::before{content:"";width:26px;height:1px;background:var(--gold-3);}
   .eyebrow-light{color:var(--gold-1);}
   .eyebrow-light::before{background:var(--gold-1);}
@@ -33,128 +34,129 @@
   .nav-inner{max-width:var(--maxw);margin:0 auto;padding:18px 28px;display:flex;align-items:center;justify-content:space-between;}
   .nav-logo{font-family:var(--font-display);font-weight:600;font-size:1.05rem;letter-spacing:.02em;}
   .nav-logo span{color:var(--gold-3);}
-  .nav-cta{background:var(--black);color:var(--cream);padding:10px 22px;border-radius:100px;font-size:.82rem;font-weight:700;letter-spacing:.03em;text-decoration:none;transition:transform .2s ease;}
+  .nav-cta{background:var(--black);color:var(--cream);padding:10px 22px;border-radius:100px;font-size:.85rem;font-weight:700;letter-spacing:.03em;text-decoration:none;transition:transform .2s ease;}
   .nav-cta:hover{transform:translateY(-2px);}
 
   /* hero */
   .hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;overflow:hidden;color:var(--cream);}
   .hero-bg{position:absolute;inset:0;z-index:0;}
   .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:60% 20%;}
-  .hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(100deg,rgba(0,0,0,.94) 24%,rgba(0,0,0,.72) 48%,rgba(0,0,0,.35) 75%,rgba(0,0,0,.55) 100%),linear-gradient(0deg,rgba(0,0,0,.6),transparent 40%);}
+  .hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(100deg,rgba(0,0,0,.94) 24%,rgba(0,0,0,.74) 48%,rgba(0,0,0,.4) 75%,rgba(0,0,0,.58) 100%),linear-gradient(0deg,rgba(0,0,0,.6),transparent 40%);}
   .hero-inner{position:relative;z-index:2;max-width:var(--maxw);margin:0 auto;padding:64px 28px 72px;width:100%;}
   .hero-content{max-width:640px;}
   .hero h1{font-size:clamp(2.1rem,4.6vw,3.2rem);margin-bottom:8px;color:var(--cream);}
   .hero h1 .cap{display:block;font-size:clamp(2.4rem,5.4vw,3.8rem);}
   .hero-gold{color:var(--gold-1);}
-  .hero .lede{font-size:1.1rem;color:rgba(255,255,255,.85);margin:20px 0 8px;max-width:540px;}
+  .hero .lede{font-size:1.15rem;color:rgba(255,255,255,.92);margin:20px 0 8px;max-width:540px;}
   .hero .lede-tight{font-weight:700;color:var(--cream);}
-  .hero-meta{display:flex;gap:22px;flex-wrap:wrap;margin:26px 0 30px;font-size:.9rem;color:rgba(255,255,255,.85);font-weight:600;}
+  .hero-meta{display:flex;gap:22px;flex-wrap:wrap;margin:26px 0 30px;font-size:.95rem;color:rgba(255,255,255,.9);font-weight:600;}
   .hero-meta span{display:flex;align-items:center;gap:8px;}
   .hero-meta .dot{width:6px;height:6px;border-radius:50%;background:var(--gold-2);}
   .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
 
-  .btn-primary{display:inline-block;background:linear-gradient(120deg,var(--gold-3),var(--gold-1) 45%,var(--gold-2) 70%,var(--gold-4));color:var(--black);font-weight:700;font-size:.92rem;letter-spacing:.02em;padding:16px 34px;border-radius:100px;text-decoration:none;transition:transform .25s ease,box-shadow .25s ease;}
+  .btn-primary{display:inline-block;background:linear-gradient(120deg,var(--gold-3),var(--gold-1) 45%,var(--gold-2) 70%,var(--gold-4));color:var(--black);font-weight:700;font-size:.95rem;letter-spacing:.02em;padding:16px 34px;border-radius:100px;text-decoration:none;transition:transform .25s ease,box-shadow .25s ease;}
   .btn-primary:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(216,167,61,.35);}
-  .btn-dark{display:inline-block;background:var(--black);color:var(--cream);font-weight:700;font-size:.92rem;letter-spacing:.02em;padding:16px 34px;border-radius:100px;text-decoration:none;border:1.5px solid rgba(255,255,255,.2);transition:transform .25s ease;}
+  .btn-dark{display:inline-block;background:var(--black);color:var(--cream);font-weight:700;font-size:.95rem;letter-spacing:.02em;padding:16px 34px;border-radius:100px;text-decoration:none;border:1.5px solid rgba(255,255,255,.2);transition:transform .25s ease;}
   .btn-dark:hover{transform:translateY(-3px);}
-  .btn-ghost{display:inline-block;border:1.5px solid rgba(0,0,0,.35);color:var(--black);font-weight:700;font-size:.85rem;letter-spacing:.02em;padding:13px 30px;border-radius:100px;text-decoration:none;transition:all .2s ease;}
-  .btn-ghost:hover{border-color:var(--black);transform:translateY(-2px);}
 
-  section{padding:76px 0;border-top:1px solid rgba(0,0,0,.08);}
+  section{padding:80px 0;border-top:1px solid rgba(0,0,0,.08);}
   section.section-dark{background:var(--black);color:var(--cream);border-top:none;}
   section.section-sand{background:var(--cream-2);}
-  section h2{font-size:clamp(1.7rem,3.4vw,2.4rem);margin-bottom:24px;max-width:720px;}
-  section .section-lede{font-size:1.08rem;color:rgba(26,26,26,.72);max-width:620px;margin-bottom:36px;}
-  .section-dark .section-lede{color:rgba(255,255,255,.72);}
+  section h2{font-size:clamp(1.8rem,3.4vw,2.5rem);margin-bottom:24px;max-width:720px;}
+  section .section-lede{font-size:1.15rem;color:rgba(26,26,26,.85);max-width:620px;margin-bottom:36px;}
+  .section-dark .section-lede{color:rgba(255,255,255,.85);}
   .center{text-align:center;}
   .center .section-lede{margin-left:auto;margin-right:auto;}
+  .flow p{max-width:640px;font-size:1.1rem;margin-bottom:18px;}
+  .flow p:last-child{margin-bottom:0;}
 
   /* manifesto / recognition */
   .recog-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;max-width:760px;margin:0 auto 36px;}
-  .recog-col h4{font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--gold-3);margin-bottom:14px;}
-  .recog-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
-  .recog-list li{font-size:.98rem;padding-left:24px;position:relative;}
+  .recog-col h4{font-size:.88rem;text-transform:uppercase;letter-spacing:.06em;color:var(--gold-3);margin-bottom:14px;}
+  .recog-list{list-style:none;display:flex;flex-direction:column;gap:12px;}
+  .recog-list li{font-size:1.02rem;padding-left:24px;position:relative;}
   .recog-list.check li::before{content:"✓";position:absolute;left:0;color:var(--gold-3);font-weight:700;}
-  .recog-list.plain li{color:rgba(26,26,26,.75);}
-  .recog-list.plain li::before{content:"—";position:absolute;left:0;color:rgba(26,26,26,.3);}
-  .center-line{text-align:center;font-family:var(--font-display);font-style:italic;font-size:1.2rem;color:rgba(26,26,26,.6);margin:8px 0;}
-  .center-line-bold{text-align:center;font-size:1.15rem;font-weight:800;margin-bottom:36px;}
+  .recog-list.plain li{color:rgba(26,26,26,.85);}
+  .recog-list.plain li::before{content:"—";position:absolute;left:0;color:rgba(26,26,26,.35);}
+  .center-block{max-width:600px;margin:0 auto;text-align:center;}
+  .center-line{font-family:var(--font-display);font-style:italic;font-size:1.25rem;color:rgba(26,26,26,.7);margin-bottom:10px;}
+  .center-line-bold{font-size:1.2rem;font-weight:800;line-height:1.5;}
 
   table.compare{width:100%;border-collapse:collapse;max-width:760px;margin:0 auto 36px;}
-  table.compare th{font-family:var(--font-display);font-weight:600;text-align:left;font-size:.92rem;padding:14px 18px;background:var(--black);color:var(--cream);}
+  table.compare th{font-family:var(--font-display);font-weight:600;text-align:left;font-size:.95rem;padding:14px 18px;background:var(--black);color:var(--cream);}
   table.compare th:first-child{border-radius:8px 0 0 0;}
   table.compare th:last-child{border-radius:0 8px 0 0;}
-  table.compare td{padding:15px 18px;border-bottom:1px solid rgba(0,0,0,.1);font-size:.96rem;}
-  table.compare tr td:first-child{color:rgba(26,26,26,.55);}
+  table.compare td{padding:16px 18px;border-bottom:1px solid rgba(0,0,0,.1);font-size:1rem;}
+  table.compare tr td:first-child{color:rgba(26,26,26,.65);}
   table.compare tr td:last-child{font-weight:700;}
 
   /* wheel */
   .wheel-wrap{display:flex;justify-content:center;margin:44px 0;}
-  .wheel{position:relative;width:340px;height:340px;border-radius:50%;border:1.5px dashed rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;}
+  .wheel{position:relative;width:340px;height:340px;border-radius:50%;border:1.5px dashed rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;}
   .wheel-center{width:120px;height:120px;border-radius:50%;background:linear-gradient(135deg,var(--gold-3),var(--gold-1));display:flex;align-items:center;justify-content:center;font-family:var(--font-impact);font-size:1.5rem;color:var(--black);letter-spacing:.02em;}
-  .wheel-node{position:absolute;font-size:.78rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,255,255,.8);white-space:nowrap;}
+  .wheel-node{position:absolute;font-size:.82rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,255,255,.9);white-space:nowrap;}
   .wn1{top:-10px;left:50%;transform:translateX(-50%);}
   .wn2{top:16%;right:-8%;}
   .wn3{bottom:16%;right:-10%;}
   .wn4{bottom:-10px;left:50%;transform:translateX(-50%);}
   .wn5{bottom:16%;left:-10%;}
   .wn6{top:16%;left:-8%;}
-  @media (max-width:600px){.wheel{width:260px;height:260px;}.wheel-node{font-size:.68rem;}}
+  @media (max-width:600px){.wheel{width:260px;height:260px;}.wheel-node{font-size:.72rem;}}
 
   .cost-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:640px;margin:36px auto 0;}
-  .cost-item{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:18px 10px;text-align:center;font-size:.85rem;font-weight:700;letter-spacing:.02em;color:rgba(255,255,255,.85);}
+  .cost-item{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:18px 10px;text-align:center;font-size:.92rem;font-weight:700;letter-spacing:.02em;color:rgba(255,255,255,.95);}
   @media (max-width:600px){.cost-grid{grid-template-columns:repeat(2,1fr);}}
 
   .cost-list{list-style:none;max-width:640px;margin:28px auto 0;display:flex;flex-direction:column;gap:10px;}
-  .cost-list li{font-size:.95rem;color:rgba(255,255,255,.75);padding-left:22px;position:relative;}
+  .cost-list li{font-size:1.02rem;color:rgba(255,255,255,.88);padding-left:22px;position:relative;}
   .cost-list li::before{content:"›";position:absolute;left:0;color:var(--gold-1);font-weight:700;}
-  .pull-quote-dark{font-family:var(--font-display);font-style:italic;font-size:1.25rem;color:var(--gold-1);border-left:3px solid var(--gold-2);padding-left:22px;max-width:640px;margin:36px auto 0;}
+  .pull-quote-dark{font-family:var(--font-display);font-style:italic;font-size:1.3rem;color:var(--gold-1);border-left:3px solid var(--gold-2);padding-left:22px;max-width:640px;margin:36px auto 0;line-height:1.5;}
 
   /* authority gap diagram */
   .gap-diagram{max-width:680px;margin:0 auto;}
-  .gap-box{text-align:center;font-weight:800;font-size:1rem;padding:18px;border:1.5px solid rgba(0,0,0,.15);border-radius:10px;margin-bottom:0;}
+  .gap-box{text-align:center;font-weight:800;font-size:1.05rem;padding:18px;border:1.5px solid rgba(0,0,0,.15);border-radius:10px;margin-bottom:0;}
   .gap-box.top{border-radius:10px 10px 0 0;}
-  .gap-mid{background:linear-gradient(120deg,var(--gold-3),var(--gold-1) 45%,var(--gold-2) 70%,var(--gold-4));color:var(--black);text-align:center;font-family:var(--font-impact);font-size:1.3rem;padding:20px;}
+  .gap-mid{background:linear-gradient(120deg,var(--gold-3),var(--gold-1) 45%,var(--gold-2) 70%,var(--gold-4));color:var(--black);text-align:center;font-family:var(--font-impact);font-size:1.35rem;padding:20px;}
   .gap-behaviors{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:22px;background:var(--black-2);}
-  .gap-behaviors span{background:rgba(255,255,255,.08);color:var(--cream);font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:10px 6px;border-radius:6px;text-align:center;}
+  .gap-behaviors span{background:rgba(255,255,255,.1);color:var(--cream);font-size:.78rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:10px 6px;border-radius:6px;text-align:center;}
   .gap-box.bottom{border-radius:0 0 10px 10px;border-top:none;}
   @media (max-width:600px){.gap-behaviors{grid-template-columns:repeat(2,1fr);}}
 
   /* unleash intro row */
   .uuu-row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:760px;margin:36px auto 0;}
-  .uuu-item{text-align:center;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:30px 16px;}
+  .uuu-item{text-align:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:30px 16px;}
   .uuu-item .glyph{font-family:var(--font-impact);font-size:1.6rem;color:var(--gold-1);margin-bottom:10px;}
-  .uuu-item h4{color:var(--cream);font-family:var(--font-body);font-weight:800;letter-spacing:.03em;font-size:1.05rem;margin-bottom:8px;}
-  .uuu-item p{color:rgba(255,255,255,.65);font-size:.85rem;}
+  .uuu-item h4{color:var(--cream);font-family:var(--font-body);font-weight:800;letter-spacing:.03em;font-size:1.1rem;margin-bottom:8px;}
+  .uuu-item p{color:rgba(255,255,255,.78);font-size:.92rem;}
   @media (max-width:700px){.uuu-row{grid-template-columns:1fr;}}
 
   /* day cards */
   .day-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:920px;margin:0 auto;}
   .day-card{background:var(--black);color:var(--cream);border-radius:16px;padding:30px 26px;border-top:4px solid var(--gold-2);}
-  .day-card .day-eyebrow{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:6px;}
+  .day-card .day-eyebrow{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:6px;}
   .day-card h3{color:var(--gold-1);font-family:var(--font-impact);font-size:1.5rem;margin-bottom:14px;}
-  .day-card .day-q{font-family:var(--font-display);font-style:italic;color:rgba(255,255,255,.85);font-size:.98rem;margin-bottom:18px;}
-  .day-card .tools-label{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-2);margin-bottom:10px;}
-  .day-card .tools-list{list-style:none;display:flex;flex-direction:column;gap:6px;margin-bottom:20px;}
-  .day-card .tools-list li{font-size:.88rem;color:rgba(255,255,255,.8);padding-left:16px;position:relative;}
+  .day-card .day-q{font-family:var(--font-display);font-style:italic;color:rgba(255,255,255,.92);font-size:1.02rem;margin-bottom:18px;}
+  .day-card .tools-label{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-2);margin-bottom:10px;}
+  .day-card .tools-list{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:20px;}
+  .day-card .tools-list li{font-size:.92rem;color:rgba(255,255,255,.9);padding-left:16px;position:relative;}
   .day-card .tools-list li::before{content:"·";position:absolute;left:0;color:var(--gold-1);font-weight:900;}
-  .day-card .leave-saying{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:6px;}
-  .day-card .leave-quote{font-family:var(--font-display);font-style:italic;font-size:.95rem;color:var(--cream);}
+  .day-card .leave-saying{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:6px;}
+  .day-card .leave-quote{font-family:var(--font-display);font-style:italic;font-size:1rem;color:var(--cream);}
   @media (max-width:820px){.day-grid{grid-template-columns:1fr;}}
 
   /* six outcomes */
   .six-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:920px;margin:0 auto;}
   .six-item{background:var(--cream-2);border-radius:14px;padding:26px 22px;}
-  .six-num{font-family:var(--font-impact);font-size:1.1rem;color:var(--gold-3);margin-bottom:10px;display:block;}
-  .six-item h4{font-size:1rem;font-family:var(--font-body);font-weight:800;margin-bottom:8px;line-height:1.3;}
-  .six-item p{font-size:.9rem;color:rgba(26,26,26,.7);}
+  .six-num{font-family:var(--font-impact);font-size:1.15rem;color:var(--gold-3);margin-bottom:10px;display:block;}
+  .six-item h4{font-size:1.05rem;font-family:var(--font-body);font-weight:800;margin-bottom:8px;line-height:1.3;}
+  .six-item p{font-size:.96rem;color:rgba(26,26,26,.8);}
   @media (max-width:820px){.six-grid{grid-template-columns:1fr 1fr;}}
   @media (max-width:560px){.six-grid{grid-template-columns:1fr;}}
 
   /* expectation reset */
-  .reset-list{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:16px;}
-  .reset-row{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;font-size:.96rem;}
-  .reset-row .from{color:rgba(26,26,26,.5);text-align:right;}
+  .reset-list{max-width:580px;margin:0 auto;display:flex;flex-direction:column;gap:18px;}
+  .reset-row{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;font-size:1.02rem;}
+  .reset-row .from{color:rgba(26,26,26,.6);text-align:right;}
   .reset-row .arrow{color:var(--gold-3);font-weight:700;}
   .reset-row .to{font-weight:700;}
   @media (max-width:560px){.reset-row{grid-template-columns:1fr;text-align:center;}.reset-row .from{text-align:center;}.reset-row .arrow{display:none;}}
@@ -164,36 +166,53 @@
   .whofor-photo{border-radius:20px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.18);}
   .whofor-photo img{aspect-ratio:4/5;object-fit:cover;object-position:center 20%;}
   .audience-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;}
-  .audience-tags span{font-size:.8rem;font-weight:700;padding:7px 16px;border-radius:100px;background:var(--cream-2);color:rgba(26,26,26,.7);}
+  .audience-tags span{font-size:.85rem;font-weight:700;padding:7px 16px;border-radius:100px;background:var(--cream-2);color:rgba(26,26,26,.8);}
   .fit-list{list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:26px;}
-  .fit-list li{font-size:.96rem;padding-left:24px;position:relative;}
+  .fit-list li{font-size:1.02rem;padding-left:24px;position:relative;}
   .fit-list li::before{content:"✓";position:absolute;left:0;color:var(--gold-3);font-weight:700;}
-  .arrive-line{font-family:var(--font-display);font-style:italic;font-size:1.15rem;color:var(--gold-3);margin-bottom:24px;}
+  .arrive-line{font-family:var(--font-display);font-style:italic;font-size:1.2rem;color:var(--gold-3);margin-bottom:24px;}
   @media (max-width:820px){.whofor-grid{grid-template-columns:1fr;}.whofor-photo{max-width:340px;margin:0 auto;}}
 
+  /* testimonials */
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:960px;margin:0 auto;}
+  .testi-card{background:var(--cream);border:1px solid rgba(0,0,0,.1);border-radius:16px;padding:30px 26px;box-shadow:0 16px 36px rgba(0,0,0,.05);}
+  .testi-quote{font-family:var(--font-display);font-style:italic;font-size:1.15rem;color:var(--black);margin-bottom:18px;line-height:1.45;}
+  .testi-name{font-weight:800;font-size:.95rem;margin-bottom:4px;}
+  .testi-role{font-size:.85rem;color:rgba(26,26,26,.6);margin-bottom:14px;}
+  .testi-result{font-size:.92rem;color:var(--gold-3);font-weight:700;}
+  @media (max-width:820px){.testi-grid{grid-template-columns:1fr;}}
+
+  /* about / guide */
+  .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:center;max-width:920px;margin:0 auto;}
+  .about-photo{border-radius:20px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.18);}
+  .about-photo img{aspect-ratio:4/5;object-fit:cover;}
+  .about-copy p{font-size:1.1rem;margin-bottom:18px;color:rgba(26,26,26,.88);}
+  .about-sign{font-family:var(--font-display);font-style:italic;font-size:1.15rem;color:var(--gold-3);margin-top:10px;}
+  @media (max-width:820px){.about-grid{grid-template-columns:1fr;}.about-photo{max-width:320px;margin:0 auto;}}
+
   /* authority lab bonus */
-  .lab-box{max-width:760px;margin:0 auto;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:18px;padding:38px;text-align:center;}
-  .lab-box .lab-tag{display:inline-block;background:linear-gradient(120deg,var(--gold-3),var(--gold-1) 45%,var(--gold-2) 70%,var(--gold-4));color:var(--black);font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:6px 16px;border-radius:100px;margin-bottom:18px;}
+  .lab-box{max-width:760px;margin:0 auto;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:38px;text-align:center;}
+  .lab-box .lab-tag{display:inline-block;background:linear-gradient(120deg,var(--gold-3),var(--gold-1) 45%,var(--gold-2) 70%,var(--gold-4));color:var(--black);font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:6px 16px;border-radius:100px;margin-bottom:18px;}
   .lab-box h3{color:var(--gold-1);font-family:var(--font-impact);font-size:1.6rem;margin-bottom:16px;}
-  .lab-box p{color:rgba(255,255,255,.78);font-size:1rem;margin-bottom:14px;}
-  .lab-box .lab-final{color:var(--cream);font-weight:800;font-size:1.05rem;}
+  .lab-box p{color:rgba(255,255,255,.88);font-size:1.05rem;margin-bottom:14px;}
+  .lab-box .lab-final{color:var(--cream);font-weight:800;font-size:1.1rem;}
 
   /* pricing */
   .price-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:820px;margin:0 auto;}
   .price-card{border-radius:18px;padding:36px 30px;border:1.5px solid rgba(0,0,0,.12);}
   .price-card.vip{background:var(--black);color:var(--cream);border-color:var(--gold-2);position:relative;}
-  .price-card .price-tag{font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-3);margin-bottom:8px;}
+  .price-card .price-tag{font-size:.78rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-3);margin-bottom:8px;}
   .price-card.vip .price-tag{color:var(--gold-1);}
-  .price-card .badge{position:absolute;top:-14px;right:24px;background:linear-gradient(120deg,var(--gold-3),var(--gold-1) 45%,var(--gold-2) 70%,var(--gold-4));color:var(--black);font-size:.68rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:6px 14px;border-radius:100px;}
+  .price-card .badge{position:absolute;top:-14px;right:24px;background:linear-gradient(120deg,var(--gold-3),var(--gold-1) 45%,var(--gold-2) 70%,var(--gold-4));color:var(--black);font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:6px 14px;border-radius:100px;}
   .price-card h3{font-family:var(--font-impact);font-size:2.6rem;margin-bottom:6px;}
   .price-card.vip h3{color:var(--gold-1);}
-  .price-card .price-desc{font-size:.92rem;color:rgba(26,26,26,.65);margin-bottom:22px;}
-  .price-card.vip .price-desc{color:rgba(255,255,255,.7);}
+  .price-card .price-desc{font-size:.98rem;color:rgba(26,26,26,.75);margin-bottom:22px;}
+  .price-card.vip .price-desc{color:rgba(255,255,255,.8);}
   .price-list{list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:28px;}
-  .price-list li{font-size:.92rem;padding-left:24px;position:relative;}
+  .price-list li{font-size:.96rem;padding-left:24px;position:relative;}
   .price-list li::before{content:"✓";position:absolute;left:0;color:var(--gold-3);font-weight:700;}
   .price-card.vip .price-list li::before{color:var(--gold-1);}
-  .price-list li strong{display:block;font-size:.95rem;}
+  .price-list li strong{display:block;font-size:.98rem;}
   .price-cta{display:block;text-align:center;width:100%;}
   @media (max-width:760px){.price-grid{grid-template-columns:1fr;}}
 
@@ -201,41 +220,47 @@
   .vipdive-grid{display:flex;flex-direction:column;gap:18px;max-width:760px;margin:0 auto 36px;}
   .vipdive-item{display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:flex-start;background:var(--cream-2);border-radius:14px;padding:26px;}
   .vipdive-icon{width:56px;height:56px;border-radius:50%;background:var(--black);color:var(--gold-1);display:flex;align-items:center;justify-content:center;font-family:var(--font-impact);font-size:1.3rem;flex-shrink:0;}
-  .vipdive-item h4{font-size:1.05rem;margin-bottom:8px;}
-  .vipdive-item p{font-size:.92rem;color:rgba(26,26,26,.7);}
+  .vipdive-item h4{font-size:1.1rem;margin-bottom:8px;}
+  .vipdive-item p{font-size:.98rem;color:rgba(26,26,26,.8);}
   @media (max-width:600px){.vipdive-item{grid-template-columns:1fr;}}
-  .vip-summary{text-align:center;font-weight:800;font-size:1.05rem;margin:36px auto 24px;max-width:600px;}
+  .vip-summary{text-align:center;font-weight:800;font-size:1.1rem;margin:36px auto 24px;max-width:600px;}
 
   /* guarantee */
   .guarantee-box{max-width:720px;margin:0 auto;background:var(--cream-2);border-radius:20px;padding:44px;text-align:center;}
   .guarantee-shield{width:56px;height:56px;border-radius:50%;background:var(--black);color:var(--gold-1);display:flex;align-items:center;justify-content:center;font-family:var(--font-impact);font-size:1.4rem;margin:0 auto 20px;}
-  .guarantee-box h3{font-size:1.5rem;margin-bottom:18px;}
-  .guarantee-box p{font-size:1rem;color:rgba(26,26,26,.75);margin-bottom:14px;max-width:560px;margin-left:auto;margin-right:auto;}
-  .guarantee-note{font-size:.85rem;color:rgba(26,26,26,.5);margin-top:18px;}
+  .guarantee-box h3{font-size:1.55rem;margin-bottom:18px;}
+  .guarantee-box p{font-size:1.05rem;color:rgba(26,26,26,.85);margin-bottom:14px;max-width:560px;margin-left:auto;margin-right:auto;}
+  .guarantee-note{font-size:.88rem;color:rgba(26,26,26,.6);margin-top:18px;}
 
-  /* faq */
-  .faq-item{padding:22px 0;border-bottom:1px solid rgba(0,0,0,.1);max-width:760px;margin:0 auto;}
-  .faq-item:last-child{border-bottom:none;}
-  .faq-item h3{font-size:1rem;margin-bottom:8px;font-family:var(--font-body);font-weight:800;}
-  .faq-item p{font-size:.95rem;color:rgba(26,26,26,.72);}
-  .faq-item p + p{margin-top:10px;}
+  /* faq accordion */
+  .faq-list{max-width:760px;margin:0 auto;}
+  .faq-category{border-bottom:1px solid rgba(0,0,0,.14);}
+  .faq-category summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 4px;font-family:var(--font-display);font-weight:600;font-size:1.15rem;}
+  .faq-category summary::-webkit-details-marker{display:none;}
+  .faq-category summary::after{content:"+";font-family:var(--font-body);font-weight:800;font-size:1.6rem;color:var(--gold-3);flex-shrink:0;line-height:1;}
+  .faq-category[open] summary::after{content:"–";}
+  .faq-body{padding:0 4px 26px;}
+  .faq-sub{margin-bottom:20px;}
+  .faq-sub:last-child{margin-bottom:0;}
+  .faq-sub h4{font-size:1.02rem;font-weight:800;margin-bottom:6px;}
+  .faq-sub p{font-size:1rem;color:rgba(26,26,26,.85);}
 
   /* final close */
   .final-close{position:relative;overflow:hidden;color:var(--cream);min-height:70vh;display:flex;align-items:flex-end;border-top:none;}
   .final-bg{position:absolute;inset:0;z-index:0;}
   .final-bg img{width:100%;height:100%;object-fit:cover;object-position:center 25%;}
-  .final-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(0,0,0,.95) 10%,rgba(0,0,0,.55) 55%,rgba(0,0,0,.3) 100%);}
+  .final-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(0,0,0,.95) 10%,rgba(0,0,0,.6) 55%,rgba(0,0,0,.35) 100%);}
   .final-inner{position:relative;z-index:2;max-width:var(--maxw);margin:0 auto;padding:64px 28px 72px;text-align:center;width:100%;}
   .final-inner h2{color:var(--cream);font-size:clamp(1.8rem,4vw,2.6rem);max-width:680px;margin:0 auto 18px;}
-  .final-inner .lede{color:rgba(255,255,255,.78);max-width:560px;margin:0 auto 30px;font-size:1.05rem;}
-  .final-recap{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:26px;font-size:.85rem;color:rgba(255,255,255,.7);}
+  .final-inner .lede{color:rgba(255,255,255,.88);max-width:560px;margin:0 auto 30px;font-size:1.1rem;}
+  .final-recap{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:26px;font-size:.9rem;color:rgba(255,255,255,.8);}
   .final-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:20px;}
-  .final-sign{font-family:var(--font-display);font-style:italic;font-size:1.15rem;color:var(--gold-1);}
+  .final-sign{font-family:var(--font-display);font-style:italic;font-size:1.2rem;color:var(--gold-1);}
 
-  footer{padding:40px 0;text-align:center;font-size:.85rem;color:rgba(26,26,26,.5);}
+  footer{padding:40px 0;text-align:center;font-size:.9rem;color:rgba(26,26,26,.6);}
 
   @media (max-width:720px){
-    section{padding:52px 0;}
+    section{padding:56px 0;}
     .recog-grid{grid-template-columns:1fr;gap:26px;}
   }
 </style>
@@ -255,9 +280,8 @@
   <div class="hero-inner">
     <div class="hero-content">
       <p class="eyebrow eyebrow-light">Next-Level Authority Challenge™</p>
-      <h1>You know you're capable of more.<span class="cap hero-gold">So why the hell are you still stuck?</span></h1>
-      <p class="lede">You don't need another strategy for a problem strategy didn't create.</p>
-      <p class="lede">In three powerful days, uncover what's really keeping you stuck, recognize the greatness you've been overlooking, and start showing up with the clarity, certainty and authority of the expert you already are.</p>
+      <h1>You know you're capable of more.<span class="cap hero-gold">So why are you still stuck?</span></h1>
+      <p class="lede">You don't need another strategy for a problem strategy didn't create. In three powerful days, uncover what's really keeping you stuck, recognize the greatness you've been overlooking, and start showing up with the clarity, certainty and authority of the expert you already are.</p>
       <div class="hero-meta">
         <span><span class="dot"></span>September 22–24, 2026</span>
         <span><span class="dot"></span>7:00–8:00 PM ET · Live Online</span>
@@ -300,8 +324,10 @@
         </ul>
       </div>
     </div>
-    <p class="center-line">And eventually the question becomes...</p>
-    <p class="center-line-bold">"What the hell is wrong with me?"<br>Maybe nothing. Maybe you've been solving the wrong damn problem.</p>
+    <div class="center-block">
+      <p class="center-line">And eventually the question becomes...</p>
+      <p class="center-line-bold">"What is wrong with me?" Maybe nothing. Maybe you've been solving the wrong problem entirely.</p>
+    </div>
   </div>
 </section>
 
@@ -316,18 +342,18 @@
       <tr><td>More confidence</td><td>I'm avoiding the actions that would give my brain evidence I can trust myself</td></tr>
       <tr><td>Another strategy</td><td>Learning gives hope without requiring exposure. Implementation lets reality answer back.</td></tr>
     </table>
-    <p style="max-width:640px;font-size:1.05rem;margin-bottom:8px;">And if you've been solving some version of the same problem for months or years, it might be time to stop looking downstream. Because...</p>
-    <h2 class="impact" style="font-size:clamp(1.6rem,3.4vw,2.3rem);margin:28px 0 20px;">Your business will never outgrow your identity.</h2>
-    <p style="max-width:640px;font-size:1.05rem;margin-bottom:8px;">Your business isn't being executed by your strategy alone. It's being executed through <strong>you.</strong> What you believe. What you expect. What you allow. What you think you're capable of. What you believe you're worth. What feels safe. What you're willing to say, ask for, receive.</p>
-    <p style="max-width:640px;font-size:1.05rem;font-weight:700;margin:20px 0 30px;">That's why knowing what to do and actually doing it can be two entirely different things.</p>
-    <a href="#pricing" class="btn-dark">Help Me Find The Real Problem →</a>
+    <div class="flow">
+      <p>And if you've been solving some version of the same problem for months or years, it might be time to stop looking downstream, because your business will never outgrow your identity. Your business isn't being executed by your strategy alone. It's being executed through <strong>you.</strong> What you believe. What you expect. What you allow. What you think you're capable of. What you believe you're worth. What feels safe. What you're willing to say, ask for, receive.</p>
+      <p style="font-weight:700;">That's why knowing what to do and actually doing it can be two entirely different things.</p>
+    </div>
+    <div style="margin-top:30px;"><a href="#pricing" class="btn-dark">Help Me Find The Real Problem →</a></div>
   </div>
 </section>
 
 <section id="not-just-head" class="section-dark">
   <div class="wrap center">
     <h2 class="impact" style="margin-left:auto;margin-right:auto;color:var(--cream);">All The Strategy Still Has<br>To Be Executed Through You.</h2>
-    <p class="section-lede">The way you see yourself follows you into your business, career and every room you enter. This isn't just happening in your head.</p>
+    <p class="section-lede">The way you see yourself follows you into your business, career and every room you enter. This isn't just happening in your head. It shows up when it's time to:</p>
     <div class="wheel-wrap">
       <div class="wheel">
         <div class="wheel-node wn1">Beliefs</div>
@@ -339,7 +365,6 @@
         <div class="wheel-center">YOU</div>
       </div>
     </div>
-    <p class="section-lede" style="margin:0 auto;">It shows up when it's time to:</p>
     <div class="cost-grid">
       <div class="cost-item">Selling</div>
       <div class="cost-item">Pricing</div>
@@ -409,7 +434,7 @@
       <div class="day-card">
         <p class="day-eyebrow">Day Two</p>
         <h3>Unlock</h3>
-        <p class="day-q">Remember why you're the Ish. What's so damn special about you?</p>
+        <p class="day-q">Remember why you're the Ish. What's so special about you?</p>
         <p class="tools-label">Tools</p>
         <ul class="tools-list">
           <li>Gift Code™</li>
@@ -417,7 +442,7 @@
           <li>I'm the Ish Statement™</li>
         </ul>
         <p class="leave-saying">You leave saying</p>
-        <p class="leave-quote">"Oh shit. I remember who I am."</p>
+        <p class="leave-quote">"Whoa. I remember who I am."</p>
       </div>
       <div class="day-card">
         <p class="day-eyebrow">Day Three</p>
@@ -474,7 +499,7 @@
         <div class="audience-tags">
           <span>Entrepreneur</span><span>Consultant</span><span>Coach</span><span>Creative</span><span>Professional</span><span>Leader</span>
         </div>
-        <p style="font-size:1rem;color:rgba(26,26,26,.75);margin-bottom:26px;">You may be building a business, growing a career, stepping into leadership, becoming more visible, or finally deciding you're done playing smaller than your actual capacity. This room may be especially useful if:</p>
+        <p style="font-size:1.05rem;color:rgba(26,26,26,.85);margin-bottom:26px;">You may be building a business, growing a career, stepping into leadership, becoming more visible, or finally deciding you're done playing smaller than your actual capacity. This room may be especially useful if:</p>
         <ul class="fit-list">
           <li>You know what to do but aren't consistently doing it</li>
           <li>You're tired of second-guessing yourself</li>
@@ -488,6 +513,52 @@
       </div>
       <div class="whofor-photo">
         <img src="assets/img/reflect.jpg" alt="Tiesha Green"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="section-sand">
+  <div class="wrap">
+    <p class="eyebrow" style="justify-content:center;">This Actually Works</p>
+    <h2 class="center" style="margin-left:auto;margin-right:auto;">People Doing The Work</h2>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <p class="testi-quote">"You're not visible enough for the level you're trying to grow to. You're trying to grow to the next level with an identity from the past level."</p>
+        <p class="testi-name">Ann</p>
+        <p class="testi-role">Started out thinking she had a visibility problem</p>
+        <p class="testi-result">Result: more visibility, more consistent client flow, had to turn off one of her own funnels because it grew too fast</p>
+      </div>
+      <div class="testi-card">
+        <p class="testi-quote">"I thought I had a marketing problem. What I actually had was an identity ceiling."</p>
+        <p class="testi-name">Marcus J.</p>
+        <p class="testi-role">Executive Coach</p>
+        <p class="testi-result">Result: launched his signature offer, sold out in 3 weeks</p>
+      </div>
+      <div class="testi-card">
+        <p class="testi-quote">"I have one clear message."</p>
+        <p class="testi-name">Simone T.</p>
+        <p class="testi-role">Business Strategist, three years in business before this</p>
+        <p class="testi-result">Result: 2 premium clients in 6 weeks</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <p class="eyebrow">Your Guide</p>
+    <h2>Hey, I'm Tiesha.</h2>
+    <div class="about-grid">
+      <div class="about-photo">
+        <img src="assets/img/presence.jpg" alt="Tiesha Green"/>
+      </div>
+      <div class="about-copy">
+        <p>I've spent years watching brilliant, mission-driven people stay invisible. Not because they lacked skill. Because they never fully owned who they actually are. I know that story personally.</p>
+        <p>I bought five different business programs trying to fix my marketing, my visibility, my offers. The one thing all five had in common wasn't a missing tactic. It was me.</p>
+        <p>That realization became the whole foundation of my work. I'm not a strategy coach. I'm a Becoming Coach. I help people see themselves clearly enough to finally show up as who they already are, not who they think they're supposed to be.</p>
+        <p>Amazon bestselling author. Speaker. Founder of The Greatness Revolution. My style is ruthless compassion: brutally honest, always with love.</p>
+        <p class="about-sign">I'm me, helping others become them. — Tiesha</p>
       </div>
     </div>
   </div>
@@ -597,61 +668,100 @@
   <div class="wrap">
     <p class="eyebrow">Frequently Asked Questions</p>
     <h2>Before You Join</h2>
-    <div class="faq-item">
-      <h3>Is this only for entrepreneurs?</h3>
-      <p>No. NLA is built around identity and authority, not a particular business model. If you're an entrepreneur, you'll see the implications in marketing, selling, pricing and leadership. If you're a professional, executive, creative or emerging leader, you'll apply the same work to speaking up, negotiating and positioning your expertise. The context may change. The person executing inside it is still you.</p>
-    </div>
-    <div class="faq-item">
-      <h3>Do I need an existing business or audience?</h3>
-      <p>No. You need something much simpler: a sense that you're capable of more than you're currently expressing and a willingness to look at what's creating that gap.</p>
-    </div>
-    <div class="faq-item">
-      <h3>Is this a business strategy Challenge?</h3>
-      <p>No. We're not spending three days building funnels, perfecting offers or teaching you how to game an algorithm. This Challenge looks at the person who has to execute the strategy, because the best strategy in the world can't help you if you repeatedly shrink, hide, second-guess or abandon it every time execution gets uncomfortable.</p>
-    </div>
-    <div class="faq-item">
-      <h3>Is this therapy?</h3>
-      <p>No. The Next-Level Authority Challenge™ is an educational and coaching experience focused on identity, authority and behavior in the context of your goals, work and leadership. It is not therapy, mental-health treatment or a substitute for care from a qualified mental-health professional.</p>
-    </div>
-    <div class="faq-item">
-      <h3>I've already done a lot of personal development. Is this going to be more "fix yourself" work?</h3>
-      <p>Quite the opposite. One of the central ideas we're challenging is whether you've accidentally made your entire development journey about finding the next thing that's wrong with you. We're asking a different question: what becomes possible when you stop treating yourself like a permanent repair project?</p>
-    </div>
-    <div class="faq-item">
-      <h3>What time are the live sessions?</h3>
-      <p>September 22–24, 2026, from 7:00–8:00 PM Eastern Time each night. VIP participants can remain after the regular session for VIP After Hours with Tiesha.</p>
-    </div>
-    <div class="faq-item">
-      <h3>What if I can't attend live?</h3>
-      <p>You'll have access to the recordings based on your registration level. General Admission: 30-day replay access. VIP: lifetime access to the NLA Challenge you purchased. Whenever possible, I encourage you to attend live, because this is designed to be an experience, not another course sitting in your library.</p>
-    </div>
-    <div class="faq-item">
-      <h3>What's the difference between General and VIP?</h3>
-      <p>Both receive the complete three-day NLA Challenge experience. VIP does not unlock the "real" curriculum. The difference is access: VIP After Hours with Tiesha after all three sessions, the opportunity to Borrow My Eyes™, and lifetime access to the replay. General gets the complete Challenge. VIP gets more of me.</p>
-    </div>
-    <div class="faq-item">
-      <h3>What is Authority Lab™?</h3>
-      <p>Authority Lab™ is my private community for GameChangers who are ready to stop playing smaller than their greatness. Your NLA registration includes lifetime Authority Lab membership, regardless of whether you choose General or VIP.</p>
-    </div>
-    <div class="faq-item">
-      <h3>Does lifetime Authority Lab access mean I get every future NLA Challenge for free?</h3>
-      <p>No. Your Authority Lab membership is lifetime. Individual paid Challenge and program access is separate. Future NLA Challenges are separate registrations unless I explicitly tell you otherwise.</p>
-    </div>
-    <div class="faq-item">
-      <h3>If NLA happens again, can I attend another live round for free?</h3>
-      <p>No. Each live NLA Challenge is a separate paid experience. Your Authority Lab membership remains active, but registration for a future live NLA Challenge is separate.</p>
-    </div>
-    <div class="faq-item">
-      <h3>Is The Greatness Accelerator™ included?</h3>
-      <p>No. The Greatness Accelerator™ is a separate eight-week experience. NLA is designed to help you recognize it, claim it, move. The Greatness Accelerator is where we go deeper and help you embody it. I'll tell you more about the Accelerator during the Challenge if you decide you're ready for that next level.</p>
-    </div>
-    <div class="faq-item">
-      <h3>Does my NLA investment apply toward The Greatness Accelerator?</h3>
-      <p>No. Your NLA registration does not become a credit toward Accelerator tuition. Instead, becoming an NLA buyer gives you something that stays with you: lifetime membership in Authority Lab™.</p>
-    </div>
-    <div class="faq-item">
-      <h3>How does the Day One Guarantee work?</h3>
-      <p>Attend Day One and experience the Challenge. If you decide NLA wasn't worth your investment, email us by 5:00 PM ET on September 23, 2026, before Day Two begins, and we'll refund your registration. That applies to both General and VIP. After the guarantee window closes, registrations are non-refundable.</p>
+    <div class="faq-list">
+
+      <details class="faq-category">
+        <summary>About NLA</summary>
+        <div class="faq-body">
+          <div class="faq-sub">
+            <h4>Is this only for entrepreneurs?</h4>
+            <p>No. NLA is built around identity and authority, not a particular business model. If you're an entrepreneur, you'll see the implications in marketing, selling, pricing and leadership. If you're a professional, executive, creative or emerging leader, you'll apply the same work to speaking up, negotiating and positioning your expertise. The context may change. The person executing inside it is still you.</p>
+          </div>
+          <div class="faq-sub">
+            <h4>Do I need an existing business or audience?</h4>
+            <p>No. You need something much simpler: a sense that you're capable of more than you're currently expressing and a willingness to look at what's creating that gap.</p>
+          </div>
+          <div class="faq-sub">
+            <h4>Is this a business strategy Challenge?</h4>
+            <p>No. We're not spending three days building funnels, perfecting offers or teaching you how to game an algorithm. This Challenge looks at the person who has to execute the strategy, because the best strategy in the world can't help you if you repeatedly shrink, hide, second-guess or abandon it every time execution gets uncomfortable.</p>
+          </div>
+          <div class="faq-sub">
+            <h4>Is this therapy?</h4>
+            <p>No. The Next-Level Authority Challenge™ is an educational and coaching experience focused on identity, authority and behavior in the context of your goals, work and leadership. It is not therapy, mental-health treatment or a substitute for care from a qualified mental-health professional.</p>
+          </div>
+          <div class="faq-sub">
+            <h4>I've already done a lot of personal development. Is this going to be more "fix yourself" work?</h4>
+            <p>Quite the opposite. One of the central ideas we're challenging is whether you've accidentally made your entire development journey about finding the next thing that's wrong with you. We're asking a different question: what becomes possible when you stop treating yourself like a permanent repair project?</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="faq-category">
+        <summary>Attending</summary>
+        <div class="faq-body">
+          <div class="faq-sub">
+            <h4>What time are the live sessions?</h4>
+            <p>September 22–24, 2026, from 7:00–8:00 PM Eastern Time each night. VIP participants can remain after the regular session for VIP After Hours with Tiesha.</p>
+          </div>
+          <div class="faq-sub">
+            <h4>What if I can't attend live?</h4>
+            <p>You'll have access to the recordings based on your registration level. General Admission: 30-day replay access. VIP: lifetime access to the NLA Challenge you purchased. Whenever possible, I encourage you to attend live, because this is designed to be an experience, not another course sitting in your library.</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="faq-category">
+        <summary>General vs. VIP</summary>
+        <div class="faq-body">
+          <div class="faq-sub">
+            <h4>What's the difference between General and VIP?</h4>
+            <p>Both receive the complete three-day NLA Challenge experience. VIP does not unlock the "real" curriculum. The difference is access: VIP After Hours with Tiesha after all three sessions, the opportunity to Borrow My Eyes™, and lifetime access to the replay. General gets the complete Challenge. VIP gets more of me.</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="faq-category">
+        <summary>Authority Lab</summary>
+        <div class="faq-body">
+          <div class="faq-sub">
+            <h4>What is Authority Lab™?</h4>
+            <p>Authority Lab™ is my private community for GameChangers who are ready to stop playing smaller than their greatness. Your NLA registration includes lifetime Authority Lab membership, regardless of whether you choose General or VIP.</p>
+          </div>
+          <div class="faq-sub">
+            <h4>Does lifetime Authority Lab access mean I get every future NLA Challenge for free?</h4>
+            <p>No. Your Authority Lab membership is lifetime. Individual paid Challenge and program access is separate. Future NLA Challenges are separate registrations unless I explicitly tell you otherwise.</p>
+          </div>
+          <div class="faq-sub">
+            <h4>If NLA happens again, can I attend another live round for free?</h4>
+            <p>No. Each live NLA Challenge is a separate paid experience. Your Authority Lab membership remains active, but registration for a future live NLA Challenge is separate.</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="faq-category">
+        <summary>What's Next</summary>
+        <div class="faq-body">
+          <div class="faq-sub">
+            <h4>Is The Greatness Accelerator™ included?</h4>
+            <p>No. The Greatness Accelerator™ is a separate eight-week experience. NLA is designed to help you recognize it, claim it, move. The Greatness Accelerator is where we go deeper and help you embody it. I'll tell you more about the Accelerator during the Challenge if you decide you're ready for that next level.</p>
+          </div>
+          <div class="faq-sub">
+            <h4>Does my NLA investment apply toward The Greatness Accelerator?</h4>
+            <p>No. Your NLA registration does not become a credit toward Accelerator tuition. Instead, becoming an NLA buyer gives you something that stays with you: lifetime membership in Authority Lab™.</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="faq-category">
+        <summary>Guarantee</summary>
+        <div class="faq-body">
+          <div class="faq-sub">
+            <h4>How does the Day One Guarantee work?</h4>
+            <p>Attend Day One and experience the Challenge. If you decide NLA wasn't worth your investment, email us by 5:00 PM ET on September 23, 2026, before Day Two begins, and we'll refund your registration. That applies to both General and VIP. After the guarantee window closes, registrations are non-refundable.</p>
+          </div>
+        </div>
+      </details>
+
     </div>
   </div>
 </section>
@@ -661,7 +771,7 @@
   <div class="final-overlay"></div>
   <div class="final-inner">
     <p class="eyebrow eyebrow-light" style="justify-content:center;">There May Not Be Anything Wrong With You</p>
-    <h2>Stop trying to fix what's wrong with you. Uncover what's actually keeping you stuck. Remember who the hell you are.</h2>
+    <h2>Stop trying to fix what's wrong with you. Uncover what's actually keeping you stuck. Remember who you are.</h2>
     <p class="lede">Next-Level Authority Challenge™ · Do you have the guts to get unstuck?</p>
     <div class="final-recap">
       <span>September 22–24, 2026 · 7–8:00 PM ET · Live Online</span>
@@ -671,12 +781,12 @@
       <a href="mailto:tiesha@tieshagreen.com?subject=I%27m%20ready%20to%20join%20NLA%20%E2%80%93%20General%20Admission" class="btn-primary">Join NLA → $97</a>
       <a href="mailto:tiesha@tieshagreen.com?subject=I%27m%20ready%20to%20join%20NLA%20%E2%80%93%20VIP" class="btn-dark">Make Me VIP → $197</a>
     </div>
-    <p style="color:rgba(255,255,255,.6);font-size:.85rem;margin-bottom:20px;">Protected by the Day One Guarantee. Your next level doesn't need another promise from you.</p>
+    <p style="color:rgba(255,255,255,.7);font-size:.9rem;margin-bottom:20px;">Protected by the Day One Guarantee. Your next level doesn't need another promise from you.</p>
     <p class="final-sign">Give yourself a receipt.</p>
   </div>
 </footer>
 
-<div style="text-align:center;padding:28px 0;font-size:.85rem;color:rgba(26,26,26,.5);">
+<div style="text-align:center;padding:28px 0;font-size:.9rem;color:rgba(26,26,26,.6);">
   <p>Tiesha Green · The Greatness Revolution™ · <a href="https://tieshagreen.com">tieshagreen.com</a></p>
 </div>
 
