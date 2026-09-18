@@ -24,7 +24,7 @@
   }
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
   html{scroll-behavior:smooth;}
-  body{font-family:var(--font-body);color:var(--ink);background:var(--cream);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased;}
+  body{font-family:var(--font-body);color:var(--ink);background:var(--cream);line-height:1.6;font-size:18.5px;-webkit-font-smoothing:antialiased;}
   h1,h2,h3,h4{font-family:var(--font-display);line-height:1.15;font-weight:600;color:var(--ink);}
   img{max-width:100%;display:block;}
   a{color:inherit;}
@@ -78,8 +78,8 @@
   @media (max-width:900px){ .hero-grid{grid-template-columns:1fr;min-height:auto;} }
   .hero-left{padding:72px 56px 64px 24px;display:flex;flex-direction:column;justify-content:center;max-width:600px;}
   @media (max-width:900px){ .hero-left{padding:52px 24px 36px;max-width:none;} }
-  .hero-kicker{font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;}
-  .hero-event{font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:22px;}
+  .hero-kicker{font-family:var(--font-display);font-size:1.35rem;font-weight:600;letter-spacing:.03em;color:var(--green);margin-bottom:10px;}
+  .hero-event{font-size:.92rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:26px;}
   .hero h1{font-size:clamp(1.8rem,3.6vw,2.6rem);line-height:1.2;margin-bottom:20px;color:var(--ink);}
   .hero h1 .line2{display:block;margin-top:4px;color:var(--green);text-decoration:underline;text-decoration-color:var(--gold-lt);text-decoration-thickness:3px;text-underline-offset:6px;}
   .hero-body{font-size:1.05rem;color:var(--ink-soft);margin-bottom:14px;max-width:520px;}
@@ -87,19 +87,17 @@
   .hero-cta{margin:16px 0 18px;align-self:flex-start;}
   .hero-under{font-size:.92rem;color:var(--ink-soft);font-weight:600;}
   .hero-under .faint{display:block;font-weight:400;color:var(--ink-faint);margin-top:4px;font-size:.85rem;}
-  .hero-right{position:relative;background:linear-gradient(160deg,#04302f,var(--green) 60%);padding:56px 40px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:30px;}
-  @media (max-width:900px){ .hero-right{padding:44px 24px 52px;} }
-  .stack-card{width:100%;max-width:360px;border-radius:10px;overflow:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.5);}
-  .stack-item{background:rgba(247,242,232,.94);color:var(--ink);font-weight:700;letter-spacing:.04em;font-size:.9rem;text-transform:uppercase;padding:16px 20px;border-bottom:1px solid rgba(17,17,17,.08);}
-  .stack-item:last-child{border-bottom:none;}
-  .stack-item:nth-child(even){background:rgba(247,242,232,.82);}
-  .stack-interrupt{font-family:var(--font-hand);font-size:1.6rem;color:var(--gold-lt);border:2.5px solid var(--gold-lt);border-radius:50% 50% 48% 52%/58% 44% 56% 42%;padding:16px 32px;transform:rotate(-3deg);text-align:center;}
+  .hero-right{position:relative;overflow:hidden;}
+  @media (max-width:900px){ .hero-right{min-height:380px;} }
+  .hero-scene{position:absolute;inset:0;background-image:url('assets/img/hero-scene-src.jpg');background-repeat:no-repeat;background-size:466% 183%;background-position:63% 19.4%;}
+  .hero-annotation{position:absolute;top:14%;right:8%;font-family:var(--font-hand);font-size:1.9rem;color:var(--gold-lt);border:2.5px solid var(--gold-lt);border-radius:50% 50% 46% 54%/56% 46% 54% 44%;padding:14px 30px;transform:rotate(-4deg);text-align:center;text-shadow:0 2px 10px rgba(0,0,0,.4);}
+  @media (max-width:900px){ .hero-annotation{font-size:1.5rem;padding:10px 22px;top:10%;right:6%;} }
 
   /* hero benefit strip */
   .benefit-strip{background:var(--ink);padding:26px 0;}
   .benefit-strip-inner{display:flex;justify-content:center;gap:52px;flex-wrap:wrap;text-align:center;}
   .benefit-item b{display:block;font-family:var(--font-display);font-size:1rem;letter-spacing:.03em;color:var(--gold-lt);margin-bottom:4px;}
-  .benefit-item span{font-size:.85rem;color:rgba(247,242,232,.75);}
+  .benefit-item span{font-size:.92rem;color:rgba(247,242,232,.8);}
   @media (max-width:700px){ .benefit-strip-inner{flex-direction:column;gap:16px;} }
 
   /* manifesto */
@@ -351,7 +349,6 @@
 <nav class="nav">
   <div class="nav-inner">
     <div class="nav-logo">NEXT-LEVEL <span>AUTHORITY</span>™</div>
-    <a class="btn btn-primary nav-cta" href="https://api.leadconnectorhq.com/widget/form/irAOqgmdgBNCtmrZBQaf">JOIN NLA - $97</a>
   </div>
 </nav>
 
@@ -370,18 +367,12 @@
       <p class="hero-body">You've learned the strategies. Changed the offer. Tweaked the message. Tried showing up more.</p>
       <p class="hero-body">But you're still not making the money, creating the opportunities or building the business you know you're capable of.</p>
       <p class="hero-body strong">Maybe you don't need one more thing to learn.<br>Maybe it's time to stop hiding what you already bring.</p>
-      <a class="btn btn-gold hero-cta" href="#pricing">I'M READY TO STOP GETTING IN MY OWN WAY →</a>
+      <a class="btn btn-gold hero-cta" href="#pricing">I'M READY TO STOP BEING THE BEST-KEPT SECRET →</a>
       <div class="hero-under">September 22–24 | 7:00 PM ET | Live Online<span class="faint">Plan for at least an hour each night. VIP Q&amp;A follows the main session.</span></div>
     </div>
     <div class="hero-right">
-      <div class="stack-card">
-        <div class="stack-item">Another Course</div>
-        <div class="stack-item">New Website</div>
-        <div class="stack-item">Post More</div>
-        <div class="stack-item">Change The Offer</div>
-        <div class="stack-item">Try Harder</div>
-      </div>
-      <div class="stack-interrupt hand">But what about YOU?</div>
+      <div class="hero-scene" role="img" aria-label="A workspace scene: books labeled Another Course, New Website, Post More, Change the Offer, Try Harder, next to a notebook and coffee mug"></div>
+      <div class="hero-annotation hand">WRONG<br>PROBLEM?</div>
     </div>
   </div>
 </header>
@@ -395,32 +386,28 @@
   </div>
 </div>
 
-<!-- EARLY PROBLEM: consolidated + sharpened per Sept 15 brief -->
+<!-- WRONG PROBLEM: reframed per Sept 18 brief — not "fix yourself," a new lens -->
 <section class="manifesto">
   <div class="wrap-narrow">
-    <h2>You keep trying to fix the business.<span class="hand" style="display:block;font-size:1.5rem;color:var(--green-3);margin-top:8px;">But what if the business isn't the only thing that needs your attention?</span></h2>
+    <h2>What if you're solving the wrong problem?</h2>
     <ul>
       <li>You've changed the offer.</li>
       <li>Reworked the website.</li>
       <li>Learned another marketing strategy.</li>
-      <li>Tried to become more consistent.</li>
+      <li>Tried being more consistent.</li>
     </ul>
-    <p class="q">And sometimes, yes, the strategy really does need work.</p>
-    <p class="q-strong">But every strategy still has to be executed by you.</p>
+    <p class="q">And let me be clear: sometimes the strategy really IS the problem.</p>
+    <p class="q">Sometimes the offer needs work. Sometimes the message is confusing. Sometimes the website needs to stop looking like it was built in 2007. 😂</p>
+    <p class="q-strong">But here's what we forget: EVERY STRATEGY STILL HAS TO BE EXECUTED BY YOU.</p>
     <div class="wp-foot" style="margin-top:30px;">
-      <p>So if you're hesitating before you make the ask...</p>
-      <p>Shrinking when it's time to explain your value...</p>
-      <p>Hiding when you need to become visible...</p>
-      <p>Overdelivering because you're afraid to charge more...</p>
-      <p>Avoiding sales because you don't want to feel pushy...</p>
-      <p>Waiting until you feel completely confident before you move...</p>
+      <p>If you don't fully recognize what you bring...</p>
+      <p>If you've normalized the thing that makes you valuable...</p>
+      <p>If you're shrinking the answer when somebody asks what you do...</p>
+      <p>If you're waiting for somebody else to recognize your authority before you own it...</p>
     </div>
-    <div class="callout-line">
-      <p class="q">Your business feels it.</p>
-      <p class="a">So does your career. Your income. Your leadership. Your opportunities. Your impact.</p>
-    </div>
-    <p class="q" style="text-align:center;margin-top:34px;">Maybe you don't need another strategy.</p>
-    <p class="q-strong" style="text-align:center;">Maybe you need to stop getting in the way of the ones you already have.</p>
+    <p class="lede" style="margin-top:24px;">Then even a good strategy isn't getting access to all of what you bring.</p>
+    <p class="q" style="text-align:center;margin-top:34px;">Maybe you don't need to become somebody else.</p>
+    <p class="q-strong" style="text-align:center;">Maybe you need a new lens for seeing what's already there.</p>
   </div>
 </section>
 
@@ -506,17 +493,16 @@
   <div class="wrap-narrow">
     <h2 class="gap-title center">You don't need to look more authoritative.<br>You need to own more of the authority you already have.</h2>
     <div class="gap-flow" style="margin-top:36px;">
-      <div class="gap-step"><span class="tag">The Authority Gap™</span><h4>WHO YOU KNOW YOU COULD BE</h4></div>
+      <div class="gap-step"><span class="tag">The Authority Gap™</span><h4>WHAT YOU KNOW YOU'RE CAPABLE OF</h4></div>
       <div class="gap-down">↓</div>
-      <div class="gap-step alt"><h4>HOW YOU'RE CURRENTLY SHOWING UP</h4></div>
+      <div class="gap-step alt"><h4>WHAT YOU CURRENTLY OWN + EXPRESS</h4></div>
       <div class="gap-down">↓</div>
       <div class="gap-step"><h4>WHAT OTHER PEOPLE GET TO EXPERIENCE</h4></div>
       <div class="gap-down">↓</div>
-      <div class="gap-step alt"><h4>THE RESULTS + OPPORTUNITIES YOU CREATE</h4></div>
+      <div class="gap-step alt"><h4>THE OPPORTUNITIES + RESULTS THAT BECOME POSSIBLE</h4></div>
     </div>
-    <p class="gap-sub" style="margin-top:34px;">The gap doesn't stay inside you. It affects what you say. What you ask for. What you pursue. What you charge. What you tolerate. What people trust you with. And what opportunities can find you.</p>
     <div class="gap-close">
-      <p class="s">Eventually, the world experiences the gap.</p>
+      <p class="s">The world can only respond to the greatness it gets to experience.</p>
     </div>
   </div>
 </section>
@@ -551,7 +537,7 @@
     <div class="day-cards">
       <div class="day-card d1">
         <div class="tag">Day 1 · Unlearn</div>
-        <h3>See What's Actually Keeping You Stuck.</h3>
+        <h3>See What's Actually Been Running.</h3>
         <p class="core-q">What have I been believing?</p>
         <p class="core-q-a">You'll uncover the beliefs and patterns influencing how you're showing up so you can stop trying to solve the same problem with another external fix.</p>
       </div>
@@ -563,8 +549,8 @@
       </div>
       <div class="day-card d3">
         <div class="tag">Day 3 · Unleash</div>
-        <h3>Start Moving Like the Person Your Next Level Requires.</h3>
-        <p class="core-q">How does the person who knows that move?</p>
+        <h3>Let People Experience More of It.</h3>
+        <p class="core-q">How does the person who knows this move?</p>
         <p class="core-q-a">We'll turn insight into action through visibility, value, sales, opportunity and real-world movement.</p>
       </div>
     </div>
@@ -603,9 +589,9 @@
 <!-- 14 WHO THIS IS FOR -->
 <section id="who-for">
   <div class="wrap">
-    <h2 class="center">You know you're meant for more.</h2>
-    <p class="lede center" style="max-width:700px;">You already have receipts, evidence, proof. You've done good work. People trust you. You've learned things. You've accomplished things. You've probably helped other people get results.</p>
-    <p class="lede center" style="max-width:700px;">The problem isn't that you have nothing to offer. The problem is that the way you see yourself, talk about yourself and show up doesn't always match what you're actually capable of.</p>
+    <h2 class="center">This isn't for someone still trying to figure out if they have something to offer.</h2>
+    <p class="lede center" style="max-width:700px;">This is for the person who already has receipts. You may be an entrepreneur, executive, professional, leader or someone moving into a bigger room. The qualification is simple: there is already something real here.</p>
+    <p class="q center" style="margin-top:8px;">You don't need us to manufacture greatness. You need room to recognize it, name it and start using more of it.</p>
     <div class="audience-band" role="img" aria-label="A diverse group of entrepreneurs, professionals, coaches and leaders"></div>
     <p class="who-roles">Entrepreneurs. Consultants. Coaches. Creatives.<br>Professionals. Executives. Leaders. Experts preparing for their next chapter.</p>
     <p class="lede center" style="max-width:700px;">This room may be especially useful if:</p>
@@ -618,11 +604,7 @@
       <li>You want more money and opportunity but have complicated feelings about wanting it.</li>
       <li>You've spent enough time “working on yourself” and you're ready to actually move.</li>
     </ul>
-    <div class="who-close">
-      <p>Maybe you're building a business. Maybe you're leading inside somebody else's. Maybe you're trying to become known for what you know. Maybe you're ready for a bigger room.</p>
-      <p style="margin-top:10px;">Either way, you're tired of being the best-kept secret.</p>
-    </div>
-    <div style="text-align:center;margin-top:26px;">
+    <div style="text-align:center;margin-top:36px;">
       <a class="btn btn-primary" href="https://api.leadconnectorhq.com/widget/form/irAOqgmdgBNCtmrZBQaf">YES. I'M READY TO GET UNSTUCK</a>
     </div>
   </div>
@@ -640,9 +622,9 @@
         <p>I knew I could help people. I knew I had something valuable. But I also learned that the world can't respond to greatness it cannot see, understand or experience.</p>
         <p>That lesson changed the way I thought about business. And eventually I realized something even bigger:</p>
         <p class="quote" style="font-size:1.15rem;">Your business will never outgrow your identity.</p>
-        <p>Because every strategy still has to pass through the person executing it.</p>
-        <p>That's why I created The Business of Greatness™. And it's why NLA doesn't start with another tactic.</p>
-        <p class="quote">It starts with you.</p>
+        <p>Not because the person is broken. Because every strategy still has to be carried by a person. Every message has to be said. Every offer has to be made. Every opportunity has to be pursued.</p>
+        <p>That's why I created The Business of Greatness™.</p>
+        <p class="quote">That's why NLA doesn't start with another tactic. It starts by helping you see what may have been there all along.</p>
       </div>
     </div>
   </div>
@@ -651,35 +633,25 @@
 <!-- 17 AUTHORITY LAB -->
 <section id="authority-lab">
   <div class="wrap">
-    <h2 class="center">Your NLA experience doesn't disappear when the Zoom room closes.</h2>
-    <p class="lede center">Every NLA participant receives lifetime membership in Authority Lab™, the Business of Greatness learning community for people committed to developing their authority, visibility and business.</p>
-    <p class="lede center">Continue learning. Stay connected to the work. Access member trainings. Keep growing inside the Business of Greatness ecosystem.</p>
+    <h2 class="center">And when the Zoom room closes, you still have a home.</h2>
+    <p class="lede center">Every NLA participant receives lifetime Authority Lab™ membership: community, continued learning, a place to bring questions, share wins and keep practicing.</p>
     <div class="lab-band" role="img" aria-label="A community of GameChangers connecting inside Authority Lab"></div>
     <div class="split" style="max-width:600px;margin:34px auto 0;">
       <div class="split-card left">
         <h3>General</h3>
         <ul>
           <li>Lifetime Authority Lab™ membership</li>
-          <li>30-day replay access to this NLA round</li>
+          <li>30-day NLA replay</li>
         </ul>
       </div>
       <div class="split-card right">
         <h3>VIP</h3>
         <ul>
           <li>Lifetime Authority Lab™ membership</li>
-          <li>Lifetime NLA replay access</li>
+          <li>Lifetime NLA replay</li>
         </ul>
       </div>
     </div>
-    <div class="lab-grid">
-      <div class="lab-item">Vision → Voice → Value navigation</div>
-      <div class="lab-item">Focused diagnostics</div>
-      <div class="lab-item">Short Authority Experiments / Hacks</div>
-      <div class="lab-item">Selected examples and resources</div>
-      <div class="lab-item">Occasional reason-driven sessions</div>
-      <div class="lab-item">“I Made a Move” check-ins</div>
-    </div>
-    <p class="lab-not"><b>What lifetime Lab access does NOT include:</b> future NLA rounds or other paid programs. Your place in the Lab is lifetime. Individual paid experiences remain separate.</p>
   </div>
 </section>
 
@@ -704,7 +676,7 @@
       <div class="price-card vip">
         <div class="tier">VIP</div>
         <div class="amount">$197</div>
-        <div class="desc">Everything in General, plus more room to work on you.</div>
+        <div class="desc">Everything in General, plus personalized application and feedback.</div>
         <ul>
           <li>Live after-session Q&amp;A each night</li>
           <li>Borrow My Eyes™ bonus</li>
@@ -715,22 +687,22 @@
         <a class="btn btn-gold" href="https://api.leadconnectorhq.com/widget/form/8KpmIDokQFsZQULLkNJ6">MAKE ME VIP - $197</a>
       </div>
     </div>
-    <div class="price-flip"><p>GENERAL gets you in the room. VIP gives us more room to work on YOU.</p></div>
+    <div class="price-flip"><p>GENERAL gives you the full NLA experience. VIP adds personalized application and feedback.</p></div>
   </div>
 </section>
 
 <!-- VIP DEEP DIVE: repositioned per Sept 15 brief (personalization, not "access to me") -->
 <section>
   <div class="wrap-narrow">
-    <h2 class="center">Want me to help you apply this to you?<br>Go VIP.</h2>
-    <p class="lede center">After each night's main session, VIPs stay with me. Bring the thing you're wrestling with. The message you're trying to say. The decision you're making. The place you're stuck. The thing you're too close to see clearly. We'll talk about it.</p>
+    <h2 class="center">Want help applying this to your specific situation?</h2>
+    <p class="lede center">Stay after each main session for live VIP Q&amp;A. Bring the message you're trying to articulate. The opportunity you're considering. The decision you're overthinking. The thing you're too close to see clearly. We'll look at it together.</p>
     <div class="vip-cards">
       <div class="vip-card"><h4>Live After-Session Q&amp;A Each Night</h4><p>More opportunity to bring your questions and situation into the room.</p></div>
       <div class="vip-card"><h4>Lifetime NLA Replay Access</h4><p>Return to the training anytime inside Authority Lab™.</p></div>
       <div class="vip-card"><h4>Borrow My Eyes™ Bonus</h4><p>Sometimes you're simply too close to your own brilliance to see what someone else can see immediately. Bring the question, idea, message or situation and borrow my perspective.</p></div>
     </div>
     <div class="vip-close">
-      <p>GENERAL gets you in the room.<br>VIP gives us more room to work on YOU.</p>
+      <p>GENERAL gives you the full NLA experience.<br>VIP adds personalized application and feedback.</p>
       <a class="btn btn-primary" href="https://api.leadconnectorhq.com/widget/form/8KpmIDokQFsZQULLkNJ6">MAKE ME VIP - $197</a>
     </div>
   </div>
@@ -779,7 +751,7 @@
       <details class="faq-item"><summary>What time does NLA start?</summary><div class="a">7:00 PM ET each night. Plan for at least an hour. VIP Q&amp;A follows the main session.</div></details>
       <details class="faq-item"><summary>What if I can't attend live?</summary><div class="a">General receives 30-day replay access to this NLA round. VIP receives lifetime replay access inside Authority Lab™. Attend live whenever possible because this is designed as an experience, not another course sitting in your library.</div></details>
       <details class="faq-item"><summary>What's included with Authority Lab™?</summary><div class="a">Every NLA participant gets lifetime membership in Authority Lab™, the Business of Greatness learning community. That membership is separate from your NLA replay access: General includes 30-day NLA replay, VIP includes lifetime NLA replay — but Authority Lab™ membership itself never expires, for either tier.</div></details>
-      <details class="faq-item"><summary>What's the difference between General and VIP?</summary><div class="a">Both receive the complete three-day Challenge. VIP gets more personalization and proximity: live after-session Q&amp;A each night, the Borrow My Eyes™ bonus and lifetime replay access. General gets you in the room. VIP gives us more room to work on you.</div></details>
+      <details class="faq-item"><summary>What's the difference between General and VIP?</summary><div class="a">Both receive the complete three-day Challenge. VIP gets more personalization and proximity: live after-session Q&amp;A each night, the Borrow My Eyes™ bonus and lifetime replay access. General gives you the full NLA experience. VIP adds personalized application and feedback.</div></details>
       <details class="faq-item"><summary>What's the Bonus Q&amp;A + Open Coaching?</summary><div class="a">A live session on Tuesday, September 29, so you can bring what happened when the breakthrough met real life — questions, stuck points, decisions, wins. It's included with your NLA registration at no extra cost.</div></details>
       <details class="faq-item"><summary>Is this business strategy training?</summary><div class="a">NLA is not three days of tactics and templates. We will absolutely connect what we're doing to visibility, sales, opportunity, income and business growth. But we're starting with the person who has to execute all those strategies. Because even the best strategy still has to be carried by you.</div></details>
       <details class="faq-item"><summary>Is this therapy?</summary><div class="a">No. NLA is an educational and coaching experience focused on identity, authority, self-perception and behavior in the context of your goals, work and leadership. It is not therapy, mental-health treatment or a substitute for care from a qualified mental-health professional.</div></details>
@@ -795,41 +767,20 @@
   <div class="wrap final-inner">
     <h2>People who do good should also do well.</h2>
     <div class="final-copy">
-      <p>You should be able to use what you're extraordinary at to create meaningful work. Help people. Create opportunities. Make money. Build something you're proud of. Have more choices.</p>
-      <p>Create a life with more Time. Meaning. Income.</p>
-      <p>But none of that happens while your greatness remains the best-kept secret.</p>
-      <p>You don't need to become somebody else. You need to stop abandoning the person you're becoming every time it gets uncomfortable.</p>
-      <p style="font-family:var(--font-display);font-style:italic;font-size:1.2rem;color:var(--gold-lt);margin:14px 0;">YOUR GREATNESS HAS A JOB TO DO.</p>
-      <p>Come UNLEARN what's been running. UNLOCK what you've been overlooking. And UNLEASH the version of you your next level has been waiting for.</p>
+      <p>You should be able to use what you're extraordinary at to create meaningful work. Help people. Make money. Have choices. Build something you're proud of.</p>
+      <p>Create a life with more:</p>
+      <p style="font-family:var(--font-display);font-size:1.4rem;color:var(--gold-lt);letter-spacing:.04em;">TIME &nbsp;·&nbsp; MEANING &nbsp;·&nbsp; INCOME</p>
+      <p style="margin-top:30px;">You don't need us to manufacture something extraordinary in you. I think there's already a hell of a lot there.</p>
+      <p>The question is: are you willing to see it? Own it? Let people experience it?</p>
+      <p style="font-family:var(--font-display);font-style:italic;font-size:1.3rem;color:var(--gold-lt);margin-top:22px;">YOUR GREATNESS HAS A JOB TO DO.</p>
     </div>
     <div class="final-name">
       <div class="big">NEXT-LEVEL AUTHORITY CHALLENGE™</div>
     </div>
-    <div class="final-meta">September 22–24 &nbsp;·&nbsp; Live Online<br>Bonus Q&amp;A + Open Coaching &nbsp;·&nbsp; September 29</div>
-    <div style="text-align:center;margin-bottom:24px;">
-      <a class="btn btn-gold" href="#pricing">I'M READY TO STOP WAITING →</a>
+    <div class="final-meta">September 22–24 | Live Online<br>Bonus Q&amp;A + Open Coaching September 29</div>
+    <div style="text-align:center;margin-top:28px;">
+      <a class="btn btn-gold" href="#pricing">I'M READY TO STOP BEING THE BEST-KEPT SECRET →</a>
     </div>
-    <div class="final-price-row">
-      <div class="final-price-card">
-        <div class="t">GENERAL · $97</div>
-        <p>Complete three-day experience</p>
-        <p>Bonus Q&amp;A + Open Coaching</p>
-        <p>30-day NLA replay</p>
-        <p>Lifetime Authority Lab™</p>
-      </div>
-      <div class="final-price-card">
-        <div class="t">VIP · $197</div>
-        <p>Everything in General</p>
-        <p>Live after-session Q&amp;A each night</p>
-        <p>Borrow My Eyes™ bonus</p>
-        <p>Lifetime NLA replay</p>
-      </div>
-    </div>
-    <div class="final-ctas">
-      <a class="btn btn-outline" href="https://api.leadconnectorhq.com/widget/form/irAOqgmdgBNCtmrZBQaf">JOIN NLA - $97</a>
-      <a class="btn btn-outline" href="https://api.leadconnectorhq.com/widget/form/8KpmIDokQFsZQULLkNJ6">MAKE ME VIP - $197</a>
-    </div>
-    <p class="final-guarantee">Protected by the Day 1 Guarantee.</p>
   </div>
 </section>
 
