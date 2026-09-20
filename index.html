@@ -81,7 +81,7 @@
 
   /* hero */
   .hero{background:var(--cream);overflow:hidden;}
-  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;min-height:660px;}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;min-height:620px;}
   @media (max-width:900px){ .hero-grid{grid-template-columns:1fr;min-height:auto;} }
   .hero-left{padding:72px 56px 64px 24px;display:flex;flex-direction:column;justify-content:center;max-width:600px;}
   @media (max-width:900px){ .hero-left{padding:52px 24px 36px;max-width:none;} }
@@ -108,52 +108,19 @@
   .benefit-item span{font-size:.88rem;color:rgba(247,242,232,.8);}
   @media (max-width:760px){ .benefit-strip-inner{flex-direction:column;gap:16px;} .benefit-item{max-width:none;} }
 
-  /* why NLA */
-  .why-body p{font-size:1.05rem;color:var(--ink-soft);margin-bottom:16px;max-width:680px;}
-  .why-premise{font-weight:700;color:var(--green);font-size:1.15rem;max-width:680px;margin-top:8px;}
-
-  /* manifesto / identity thesis */
+  /* manifesto / consolidated identity section */
   .manifesto{background:var(--cream);position:relative;}
   .manifesto h2{font-size:clamp(1.6rem,3.6vw,2.3rem);max-width:680px;}
-  .manifesto ul{margin:26px 0;display:flex;flex-direction:column;gap:8px;}
-  .manifesto li{font-size:1.15rem;color:var(--ink-soft);padding-left:20px;position:relative;}
-  .manifesto li::before{content:"–";position:absolute;left:0;color:var(--gold);}
   .manifesto p.body{font-size:1.05rem;color:var(--ink-soft);max-width:680px;margin-bottom:16px;}
-  .manifesto .q-strong{font-weight:700;font-style:normal;color:var(--green);font-size:1.3rem;margin:16px 0;}
-  .manifesto h3{font-size:clamp(1.4rem,3vw,1.8rem);margin-top:44px;margin-bottom:16px;max-width:680px;}
+  .manifesto .q-strong{font-weight:700;font-style:normal;color:var(--green);font-size:1.25rem;margin:16px 0;max-width:680px;}
 
-  /* governing truth (dark statement) */
-  .truth h2{font-size:clamp(1.9rem,5vw,3.1rem);max-width:820px;margin:0 auto 30px;text-align:center;color:var(--cream);}
-  .truth-chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:26px auto 30px;max-width:760px;}
-  .truth-chips span{display:inline-block;background:rgba(247,242,232,.08);border:1px solid rgba(247,242,232,.22);color:var(--cream);padding:9px 18px;border-radius:100px;font-size:.92rem;transition:transform .2s ease,background .2s ease,border-color .2s ease;}
-  .truth-chips span:hover{transform:translateY(-3px);background:rgba(247,242,232,.16);border-color:rgba(247,242,232,.45);}
-  .truth-foot{text-align:center;max-width:600px;margin:0 auto;color:rgba(247,242,232,.85);font-size:1.05rem;}
-
-  /* identity execution map */
-  .iem-wrap{display:flex;flex-direction:column;align-items:center;gap:28px;}
-  .iem-img{max-width:640px;width:100%;border-radius:14px;overflow:hidden;box-shadow:0 24px 50px -20px rgba(0,33,34,.35);}
-  .iem-mobile{display:none;}
-  @media (max-width:760px){
-    .iem-img{display:none;}
-    .iem-mobile{display:grid;grid-template-columns:1fr 1fr;gap:12px;width:100%;}
-    .iem-mobile .node{background:var(--green);color:var(--cream);border-radius:10px;padding:16px;text-align:center;}
-    .iem-mobile .node b{display:block;font-family:var(--font-display);font-size:1rem;margin-bottom:4px;color:var(--gold-lt);}
-    .iem-mobile .node span{font-size:.86rem;color:rgba(247,242,232,.85);}
-    .iem-mobile .you{grid-column:1/-1;background:var(--ink);border-radius:10px;padding:20px;text-align:center;}
-    .iem-mobile .you b{font-family:var(--font-display);color:var(--gold-lt);font-size:1.3rem;}
-  }
-  .iem-foot{text-align:center;max-width:600px;}
-  .iem-foot p{color:var(--ink-soft);}
-  .iem-foot p:first-child{font-size:1.2rem;font-weight:700;color:var(--ink);margin-bottom:8px;}
-  .iem-foot p:last-child{font-size:1.05rem;font-weight:700;color:var(--ink);}
-
-  /* money / freedom */
-  .money-line{color:rgba(247,242,232,.9);margin-bottom:8px;text-align:center;}
-  .money-line b{color:var(--gold-lt);}
+  /* chips (light, reused for stakes list) */
+  .chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:26px auto 10px;max-width:700px;}
+  .chips span{display:inline-block;background:var(--cream-2);border:1px solid var(--line);color:var(--ink-soft);padding:9px 18px;border-radius:100px;font-size:.92rem;transition:transform .2s ease,background .2s ease,border-color .2s ease;}
+  .chips span:hover{transform:translateY(-3px);background:var(--soft-2);border-color:rgba(0,33,34,.25);}
 
   /* authority gap: horizontal flow */
-  .gap-title{text-align:center;margin-bottom:10px;}
-  .gap-flow-h{display:flex;align-items:center;gap:6px;max-width:1040px;margin:36px auto 0;}
+  .gap-flow-h{display:flex;align-items:center;gap:6px;max-width:1040px;margin:0 auto;}
   @media (max-width:900px){ .gap-flow-h{flex-direction:column;gap:0;} }
   .gap-box{flex:1;border-radius:10px;padding:20px 14px;text-align:center;min-height:96px;display:flex;align-items:center;justify-content:center;transition:transform .2s ease;}
   .gap-box:hover{transform:translateY(-3px);}
@@ -162,18 +129,10 @@
   .gap-box.b2,.gap-box.b4{background:var(--ink);}
   .gap-arrow{color:var(--gold);font-size:1.2rem;padding:0 4px;flex-shrink:0;}
   @media (max-width:900px){ .gap-arrow{transform:rotate(90deg);padding:6px 0;} .gap-box{width:100%;} }
-  .gap-explain{text-align:center;max-width:700px;margin:34px auto 0;color:var(--ink-soft);font-size:1.05rem;}
-  .gap-explain b{color:var(--ink);}
-  .gap-close{text-align:center;margin-top:28px;}
-  .gap-close p{font-size:1.15rem;font-weight:700;color:var(--green);margin-bottom:10px;}
-  .gap-close p:last-child{font-weight:400;color:var(--ink-soft);font-size:1.02rem;}
 
   /* GUTS + Authority Map */
   .guts-head{text-align:center;margin-bottom:6px;}
   .guts-sub{text-align:center;color:rgba(247,242,232,.85);max-width:560px;margin:0 auto 8px;}
-  .guts-intro{text-align:center;color:rgba(247,242,232,.85);max-width:600px;margin:24px auto 44px;}
-  .guts-intro p{margin-bottom:10px;}
-  .guts-intro .last{font-weight:700;color:var(--cream);}
 
   .day-cards{display:flex;flex-direction:column;gap:22px;}
   .day-card{border-radius:14px;padding:32px 30px;border:1px solid var(--line);transition:transform .2s ease,box-shadow .2s ease;}
@@ -198,21 +157,26 @@
   .day-card.d1 .day-leave-text, .day-card.d2 .day-leave-text{color:var(--ink-soft);}
   .day-card.d3 .day-leave-text{color:rgba(247,242,232,.92);}
 
-  .live-block{max-width:680px;margin:52px auto 0;text-align:center;}
-  .live-block p{color:rgba(247,242,232,.85);margin-bottom:12px;}
-  .live-block .flow{font-weight:700;color:var(--cream);}
+  .live-block{max-width:680px;margin:48px auto 0;text-align:center;}
+  .live-block p{color:rgba(247,242,232,.85);}
 
-  .map-block{max-width:680px;margin:44px auto 0;background:rgba(247,242,232,.06);border:1px solid rgba(247,242,232,.18);border-radius:14px;padding:32px 30px;text-align:center;}
-  .map-block h3{color:var(--cream);margin-bottom:14px;font-size:1.35rem;}
+  .map-block{max-width:680px;margin:36px auto 0;background:rgba(247,242,232,.06);border:1px solid rgba(247,242,232,.18);border-radius:14px;padding:32px 30px;text-align:center;}
+  .map-block h3{color:var(--cream);margin-bottom:14px;font-size:1.3rem;}
   .map-block p{color:rgba(247,242,232,.85);margin-bottom:10px;}
+  .lab-tag{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-lt);background:rgba(247,242,232,.1);display:inline-block;padding:5px 14px;border-radius:100px;margin-bottom:14px;}
+
+  .lab-band{width:100%;aspect-ratio:1.82/1;overflow:hidden;border-radius:12px;background-image:url('assets/img/lab-community-src.jpg');background-repeat:no-repeat;background-size:196% 238%;background-position:100% 5%;}
+  @media (max-width:600px){ .lab-band{aspect-ratio:1.3/1;background-size:275% 238%;background-position:100% 5%;} }
 
   /* who this is for */
-  .audience-band{width:100%;aspect-ratio:4/1;overflow:hidden;border-radius:12px;margin-bottom:36px;background-image:url('assets/img/audience-band-src.jpg');background-repeat:no-repeat;background-size:100% 266%;background-position:50% 35%;}
+  .audience-band{width:100%;aspect-ratio:4/1;overflow:hidden;border-radius:12px;margin:36px 0;background-image:url('assets/img/audience-band-src.jpg');background-repeat:no-repeat;background-size:100% 266%;background-position:50% 35%;}
   @media (max-width:600px){ .audience-band{aspect-ratio:2.2/1;background-size:181% 266%;background-position:28% 35%;} }
   .who-check{display:flex;flex-direction:column;gap:14px;max-width:700px;margin:30px auto 0;}
   .who-check li{padding:12px 16px 12px 30px;position:relative;color:var(--ink-soft);font-size:1.02rem;border-radius:8px;transition:transform .18s ease,background .18s ease;}
   .who-check li:hover{transform:translateY(-2px);background:rgba(0,0,0,.03);}
   .who-check li::before{content:"✓";position:absolute;left:6px;top:12px;color:var(--green-3);font-weight:700;}
+  .not-for{background:var(--soft);border-radius:10px;padding:18px 22px;max-width:700px;margin:26px auto 0;}
+  .not-for p{color:var(--ink-soft);font-size:.98rem;}
   .who-close{text-align:center;margin-top:34px;max-width:600px;margin-left:auto;margin-right:auto;}
   .who-close p{font-size:1.05rem;color:var(--ink-soft);margin-bottom:8px;}
   .who-close .decide{font-size:1.3rem;font-weight:700;color:var(--green);margin:14px 0;}
@@ -234,14 +198,6 @@
   .about-copy p{font-size:1.05rem;color:var(--ink-soft);margin-bottom:14px;}
   .about-copy .quote{font-family:var(--font-display);font-style:italic;font-size:1.25rem;color:var(--green);margin-top:22px;}
 
-  /* authority lab bonus */
-  .lab-band{width:100%;aspect-ratio:1.82/1;overflow:hidden;border-radius:12px;margin-top:8px;background-image:url('assets/img/lab-community-src.jpg');background-repeat:no-repeat;background-size:196% 238%;background-position:100% 5%;}
-  @media (max-width:600px){ .lab-band{aspect-ratio:1.3/1;background-size:275% 238%;background-position:100% 5%;} }
-  .lab-bonus-box{background:var(--soft);border-radius:14px;padding:28px 30px;margin:30px 0;}
-  .lab-bonus-box .tag{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-lt);background:var(--green);display:inline-block;padding:5px 14px;border-radius:100px;margin-bottom:14px;}
-  .lab-bonus-box h3{font-size:1.25rem;margin-bottom:10px;}
-  .lab-bonus-box p{color:var(--ink-soft);}
-
   /* pricing */
   .price-cards{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch;}
   @media (max-width:700px){ .price-cards{grid-template-columns:1fr;} }
@@ -260,13 +216,12 @@
   .price-card.vip li{color:rgba(247,242,232,.92);}
   .price-card.gen li::before{content:"✓";position:absolute;left:0;color:var(--green-3);font-weight:700;}
   .price-card.vip li::before{content:"✓";position:absolute;left:0;color:var(--gold-lt);font-weight:700;}
-  .price-card li b{color:inherit;}
   .price-flip{text-align:center;margin:34px 0 8px;}
   .price-flip p{font-family:var(--font-display);font-size:1.15rem;color:var(--green);}
+  .reg-deadline{text-align:center;font-size:.95rem;color:var(--ink-faint);max-width:600px;margin:20px auto 0;}
 
-  /* bonus Q&A + guarantee */
-  .qa-guarantee-split{display:grid;grid-template-columns:1fr;gap:44px;max-width:700px;margin:0 auto;}
-  .guarantee-block{background:var(--cream-2);border:1px solid var(--line);border-radius:16px;padding:34px 32px;text-align:center;margin-top:12px;}
+  /* guarantee */
+  .guarantee-block{max-width:600px;margin:0 auto;background:var(--cream-2);border:1px solid var(--line);border-radius:16px;padding:34px 32px;text-align:center;}
   .guarantee-block .icon{font-size:1.8rem;margin-bottom:10px;}
   .guarantee-block h3{font-size:1.3rem;margin-bottom:12px;}
   .guarantee-block p{color:var(--ink-soft);margin-bottom:10px;}
@@ -287,13 +242,12 @@
   .final-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;}
   .final-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,33,34,.88),rgba(0,20,21,.94));}
   .final-inner{position:relative;z-index:2;}
-  .final h2{color:var(--cream);font-size:clamp(1.7rem,4vw,2.6rem);text-align:center;max-width:820px;margin:0 auto 24px;}
+  .final h2{color:var(--cream);font-size:clamp(1.7rem,4vw,2.4rem);text-align:center;max-width:820px;margin:0 auto 24px;}
   .final-copy{text-align:center;max-width:640px;margin:0 auto 34px;color:rgba(247,242,232,.85);}
   .final-copy p{margin-bottom:14px;}
-  .final-anchor{font-size:.95rem;color:rgba(247,242,232,.7);margin-top:20px;}
   .final-name{text-align:center;margin-bottom:8px;}
   .final-name .big{font-family:var(--font-display);font-size:1.6rem;color:var(--gold-lt);}
-  .final-meta{text-align:center;color:rgba(247,242,232,.85);margin-bottom:36px;}
+  .final-meta{text-align:center;color:rgba(247,242,232,.85);margin-bottom:16px;}
 
   footer{background:var(--ink);color:rgba(247,242,232,.6);text-align:center;padding:34px 24px;font-size:.85rem;}
 </style>
@@ -313,7 +267,7 @@
   <a class="btn btn-gold cta" href="#pricing">JOIN NLA →</a>
 </div>
 
-<!-- HERO -->
+<!-- 1. HERO, trimmed -->
 <header class="hero" id="hero">
   <div class="hero-grid wrap">
     <div class="hero-left">
@@ -322,9 +276,7 @@
       <h1>You're really good at what you do.<span class="line2">So why isn't your business doing better?</span></h1>
       <p class="hero-body">You've learned the strategies. Changed the offer. Tweaked the message. Tried showing up more.</p>
       <p class="hero-body">But you're still not making the money, creating the opportunities or building the business you know you're capable of.</p>
-      <p class="hero-body strong">Maybe you don't need one more thing to learn.<br>Maybe it's time to stop hiding what you already bring.</p>
-      <p class="hero-body strong" style="margin-top:10px;">THREE LIVE NIGHTS TO SEE IT. OWN IT. MOVE WITH IT.</p>
-      <p class="hero-body">Over three nights, you'll identify what's been influencing how you show up, uncover and put language around the value you've been overlooking, and build your own Next-Level Authority Map™. So you leave knowing what you bring, why it matters, and exactly how you're going to start putting it to work.</p>
+      <p class="hero-body strong">Maybe you don't need one more thing to learn.<br>Maybe it's time to stop being the best-kept secret in your industry.</p>
       <a class="btn btn-gold hero-cta" href="#pricing">I'M READY TO STOP BEING THE BEST-KEPT SECRET →</a>
       <div class="hero-under">September 22–24 | 7:00 PM ET | Live Online<span class="faint">Plan for at least an hour each night. VIP Q&amp;A follows the main session.</span></div>
     </div>
@@ -335,127 +287,30 @@
   </div>
 </header>
 
-<!-- HERO BENEFIT STRIP -->
 <div class="benefit-strip">
   <div class="wrap benefit-strip-inner">
     <div class="benefit-item"><b>3 LIVE NIGHTS</b><span>Work with Tiesha in real time.</span></div>
     <div class="benefit-item"><b>REAL AUTHORITY MAP</b><span>See what you bring and how you'll use it.</span></div>
-    <div class="benefit-item"><b>REAL AUTHORITY REPS</b><span>Leave knowing exactly what you're doing next.</span></div>
+    <div class="benefit-item"><b>YOU TAKE ACTION EVERY NIGHT</b><span>Leave each session knowing exactly what you're doing next. (Real Authority Reps.)</span></div>
     <div class="benefit-item"><b>DAY 1 GUARANTEE</b><span>Not blown away after Day 1? Ask for your money back.</span></div>
   </div>
 </div>
 
-<!-- WHY BECOME A NEXT-LEVEL AUTHORITY: NEW -->
-<section>
+<!-- 2. WHAT A NEXT-LEVEL AUTHORITY IS, AND WHY THIS CHALLENGE EXISTS -->
+<section class="manifesto" id="nla-is">
   <div class="wrap-narrow reveal">
-    <h2>A Next-Level Authority isn't someone with a bigger following. It's someone who's ready for more.</h2>
-    <div class="why-body">
-      <p>Who knows, deep down, they were built for more. And who's finally done waiting for permission to claim it.</p>
-      <p>Real talk: you're rockstar amazing at what you do. You know it. The people who've worked with you know it. But you're quiet as kept, so not many others know it. You've done the work. You've put in the reps. You help folks get big results. And now it's time to show up bigger, let the world actually see it, and be unapologetic about it.</p>
-      <p>Here's the truth: the world can't pay you, promote you, refer you, or choose you for what you keep to yourself. Every day you stay the best-kept secret is a day someone who needed exactly what you have found someone else instead. Usually someone with half your ability and twice your visibility.</p>
-      <p>Becoming a Next-Level Authority is what gets you unstuck. Not because visibility fixes everything. But because the same fear keeping your genius quiet is the fear keeping your business small. Close that gap, and the problem you've been trying to solve with another tactic usually starts solving itself.</p>
-      <p class="why-premise">This is the whole premise of my work: amazing people build amazing brands only when they stop being stuck in their own heads, stop playing normal, and start owning their greatness out loud.</p>
-    </div>
+    <p class="body">So if you're this good, why isn't it showing up yet? In your calendar. Your inbox. Your bank account. Let's get into why.</p>
+    <h2>A Next-Level Authority isn't someone with a bigger following. It's someone who's ready for more, and finally done waiting for permission to claim it.</h2>
+    <p class="q-strong">Real Talk...</p>
+    <p class="body">You're already rockstar amazing at what you do. You've done the work, put in the reps, gotten people real results. The people who've worked with you know it. Almost nobody else does, because you're still quiet as kept.</p>
+    <p class="body">What if you've been treating every problem like a strategy problem? Sometimes the strategy really is the problem, and if that's you, fix the strategy. But most of the time, you can have the right offer, the right message, the right plan, and still stay invisible, because every strategy still has to be executed by you. When part of you is still shrinking, still trying to fit in, still unsure what you're allowed to charge, ask for or claim, the strategy comes out watered down no matter how good it looks on paper. Prospects don't feel certain you can help them, not because the plan is wrong, but because the person executing it hasn't closed the gap between who they are and what they're willing to show.</p>
+    <p class="q-strong">We call that distance The Authority Gap™: the space between what you know you're capable of and what you consistently own, say, show and ask for.</p>
+    <p class="body" style="font-style:italic;">Quick map, so nothing gets lost: NLA is these three nights. GUTS™ is how we structure them. The Authority Gap™ is what we're closing. Your Map™ is what you build as we go.</p>
+    <p class="body">There's a reason you're so good at what you do, and it's not just your resume. Underneath the skills and experience, there's usually a pattern in how you create value: the thing you see that other people miss, the connection you make faster, the way you simplify what's complicated, the questions you know to ask. That pattern is your <b>Gift</b>. You've been carrying it so long you've probably stopped noticing it. You call it "that's just how I think" or "that's just what I do." Familiar doesn't mean ordinary. During NLA, we go looking for that pattern, then ask the question that changes everything: so what? What does your Gift make possible for somebody else? Knowing you have a Gift is nice. Understanding why somebody else should care is authority.</p>
+    <p class="q-strong">Stop making people guess why you're good.</p>
   </div>
-</section>
 
-<!-- IDENTITY THESIS, PART 1: WRONG PROBLEM -> OWNERSHIP PROBLEM -> NOT BROKEN, TRAINED -->
-<section class="manifesto">
-  <div class="wrap-narrow reveal">
-    <h2>What if you're solving the wrong problem?</h2>
-    <p class="body">Let's be clear: sometimes the strategy really IS the problem. Sometimes the offer needs work. Sometimes the message is confusing. Sometimes the website needs to stop looking like it was built in 2007.</p>
-    <p class="body">But let's say the strategy is actually right. You did the things. You followed the steps. Here's what still happens: the messaging comes out watered down. The way you show up is low energy, because part of you is still shrinking, trying to fit in. And prospects just don't feel certain you can help them.</p>
-    <p class="body">That's not a strategy problem. That's an ownership problem.</p>
-    <p class="q-strong">Because every strategy still has to be executed by you.</p>
-    <p class="body">Listen.</p>
-    <h3>You are not broken. You were trained.</h3>
-    <p class="body">Somewhere along the way, you learned to fit in. To wait your turn. To be realistic. To make your ambition easier for other people to digest. To prove yourself before you asked for more. To shrink the answer when somebody asks what you do.</p>
-    <p class="body">And maybe at the time, that training made sense. It may have kept you safe, likable, accepted. But it isn't the truth of who you are. It's what other people needed from you, not who you actually are underneath it.</p>
-    <p class="body">This isn't about fixing you. There's nothing broken here to fix. It's about recognizing the gap between who you know yourself to be and who you've been letting the world see, and closing it.</p>
-    <p class="body">That's becoming. Not becoming somebody else. Becoming the real you: the one underneath everything somebody else piled on that never had anything to do with you in the first place.</p>
-    <p class="body">And here's the rub.</p>
-  </div>
-</section>
-
-<!-- IDENTITY THESIS, PART 2: GOVERNING TRUTH -->
-<section class="dark truth">
-  <div class="wrap reveal">
-    <h2>YOUR BUSINESS WILL NEVER OUTGROW YOUR IDENTITY.</h2>
-    <p class="truth-foot" style="margin-bottom:6px;">Because your business isn't being executed by strategy alone. It's being executed through YOU:</p>
-    <div class="truth-chips">
-      <span>What you believe</span>
-      <span>What you expect</span>
-      <span>What you allow</span>
-      <span>What you believe you're worth</span>
-      <span>What feels safe</span>
-      <span>What you're willing to ask for</span>
-      <span>What you're willing to receive</span>
-    </div>
-    <p class="truth-foot">That's why knowing what to do and actually doing it can be two entirely different things.</p>
-  </div>
-</section>
-
-<!-- IDENTITY THESIS, PART 3: IDENTITY EXECUTION MAP -->
-<section class="soft">
-  <div class="wrap reveal">
-    <h2 class="center">All the strategy still has to be executed through you.</h2>
-    <div class="iem-wrap">
-      <div class="iem-img"><img src="assets/img/identity-execution-map.jpg" alt="The Identity Execution Map: Beliefs, Expectations, Worth, Safety, Desire, Visibility, Money and Action, all executed through YOU"/></div>
-      <div class="iem-mobile">
-        <div class="node"><b>Beliefs</b><span>What you believe is possible (and not).</span></div>
-        <div class="node"><b>Expectations</b><span>What you expect from yourself (and others).</span></div>
-        <div class="node"><b>Worth</b><span>What you believe you deserve.</span></div>
-        <div class="node"><b>Safety</b><span>What feels safe. What feels risky. What you avoid.</span></div>
-        <div class="node"><b>Desire</b><span>What you want. What you allow yourself to want.</span></div>
-        <div class="node"><b>Visibility</b><span>How seen you're willing to be (and by whom).</span></div>
-        <div class="node"><b>Money</b><span>What you charge. What you accept. What you keep.</span></div>
-        <div class="node"><b>Action</b><span>What you do consistently (and don't).</span></div>
-        <div class="you"><b>YOU</b><br><span style="color:rgba(247,242,232,.8);font-size:.9rem;">Your beliefs. Your choices. Your execution. Your results.</span></div>
-      </div>
-      <div class="iem-foot">
-        <p>The plan may be good. But what happens when it hits your beliefs, your relationship with money, your visibility, your worth, your sense of safety?</p>
-        <p>The question is not only “Is this the right strategy?” It is also: WHO IS THE PERSON EXECUTING IT?</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- MONEY / FREEDOM: unchanged -->
-<section class="dark" id="money">
-  <div class="wrap-narrow reveal">
-    <h2 class="center">Yes. We're going to talk about money.</h2>
-    <p class="lede center">Because I don't believe people who do good work should have to apologize for wanting to do well.</p>
-    <div style="margin:30px 0 26px;">
-      <p class="money-line"><b>You want more clients?</b> At some point, somebody has to know you exist.</p>
-      <p class="money-line"><b>You want to make more money?</b> At some point, you have to talk about value and ask for the sale.</p>
-      <p class="money-line"><b>You want the promotion?</b> Somebody needs to know you're ready for more.</p>
-      <p class="money-line"><b>You want bigger opportunities?</b> You have to stop waiting to be discovered.</p>
-    </div>
-    <p class="money-line">None of that requires you to become louder, fake a personality or turn into somebody you don't recognize.</p>
-    <p class="money-line" style="font-weight:700;color:var(--cream);">It requires more of YOU to actually show up.</p>
-    <h3 style="color:var(--cream);text-align:center;margin:46px 0 20px;font-size:1.5rem;">Money isn't everything.<br>But let's stop pretending it changes nothing.</h3>
-    <p class="lede center" style="margin-bottom:14px;">More income can mean:</p>
-    <div class="truth-chips">
-      <span>Paying the bills without holding your breath</span>
-      <span>Helping your parents</span>
-      <span>Giving your kids experiences you didn't have</span>
-      <span>Taking Friday off</span>
-      <span>Hiring help before you're completely burned out</span>
-      <span>Traveling</span>
-      <span>Giving more</span>
-      <span>Investing in the thing you keep saying you want to build</span>
-      <span>Leaving a job, client or situation you can no longer afford emotionally</span>
-    </div>
-    <p style="text-align:center;font-family:var(--font-display);font-size:1.3rem;color:var(--gold-lt);margin:34px 0 10px;letter-spacing:.04em;">TIME &nbsp;·&nbsp; MEANING &nbsp;·&nbsp; INCOME</p>
-    <p class="money-line">I don't want you building a bigger prison with better branding.</p>
-    <p style="text-align:center;font-family:var(--font-display);font-size:1.4rem;color:var(--cream);margin-top:10px;">More isn't the point. <span style="color:var(--gold-lt);">FREEDOM IS.</span></p>
-  </div>
-</section>
-
-<!-- AUTHORITY GAP: horizontal redesign per Sept 19 handoff -->
-<section class="soft" id="authority-gap">
-  <div class="wrap reveal">
-    <h2 class="gap-title center">You don't need to look more authoritative.<br>You need to own more of the authority you already have.</h2>
+  <div class="wrap reveal" style="margin-top:8px;">
     <div class="gap-flow-h">
       <div class="gap-box b1"><h4>WHAT YOU KNOW<br>YOU'RE CAPABLE OF</h4></div>
       <div class="gap-arrow">→</div>
@@ -467,109 +322,124 @@
       <div class="gap-arrow">→</div>
       <div class="gap-box b5"><h4>THE OPPORTUNITIES + RESULTS<br>THAT BECOME POSSIBLE</h4></div>
     </div>
-    <p class="gap-explain"><b>THE AUTHORITY GAP™</b> is the distance between what you know is in you (the far left) and what you consistently own, say, show and ask for (the three steps in between). Close that distance, and what you want becomes absolutely possible.</p>
-    <div class="gap-close">
-      <p>You cannot be recognized, chosen, paid, promoted or trusted for what you keep hidden.</p>
-      <p>Because you don't get rewarded for what you're capable of. You get rewarded for how you show up and stand out.</p>
-    </div>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="#pricing">SAVE MY SEAT →</a>
-    </div>
+  </div>
+
+  <div class="wrap-narrow reveal" style="margin-top:36px;">
+    <p class="body">Your Gift can be real and still be invisible to the people who need it. You aren't hidden because you aren't talented enough. You're hidden because you haven't fully put language around the thing that makes you extraordinary yet.</p>
+    <p class="body">Once you can see it... Once you can name it... Once you understand what it makes possible for other people... now you have something to express.</p>
+    <p class="q-strong" style="text-align:center;">That's the bridge from Gift → Authority.</p>
   </div>
 </section>
 
-<!-- GREATNESS TAKES GUTS + YOUR AUTHORITY MAP: major expansion per Sept 19 handoff -->
+<!-- 3. WHY YOU NEED TO DO THIS NOW -->
+<section class="soft" id="why-now">
+  <div class="wrap-narrow reveal">
+    <h2 class="center">Here's why this, why now.</h2>
+    <p class="q-strong" style="text-align:center;color:var(--green);">You can be the most talented person in the room and still get overlooked.</p>
+    <p class="body" style="margin-left:auto;margin-right:auto;text-align:center;">You can be brilliant at your work and watch somebody with half your experience get the opportunity. You can have clients who swear by you and still struggle to explain what makes you different to somebody who's never met you.</p>
+    <p class="body" style="margin-left:auto;margin-right:auto;text-align:center;">That's what it costs to be the best-kept secret. Every day you stay hidden, someone who needed exactly what you have may find somebody else. Not necessarily somebody better. Somebody they understood faster.</p>
+    <p class="body" style="margin-left:auto;margin-right:auto;text-align:center;">If people don't understand what makes you valuable, they can't hire you for it. Promote you for it. Refer you for it. Pay you for it. None of that requires you to become louder or fake a personality. It requires more of <i>you</i> to actually show up.</p>
+    <p class="lede center" style="margin-bottom:6px;">And yes, that means talking about money, because more income isn't nothing:</p>
+    <div class="chips">
+      <span>Paying the bills without holding your breath</span>
+      <span>Taking Friday off</span>
+      <span>Hiring help before you're completely burned out</span>
+      <span>Traveling</span>
+      <span>Giving more</span>
+      <span>Leaving a job, client or situation you can no longer afford emotionally</span>
+    </div>
+    <p class="center" style="font-family:var(--font-display);font-size:1.15rem;color:var(--green);margin-top:16px;max-width:640px;">Time. Meaning. Income. That's the point. Not more for the sake of more. Freedom. And it's hard to build more of it around value you keep hiding.</p>
+    <div class="cta-row"><a class="btn btn-primary" href="#pricing">SAVE MY SEAT →</a></div>
+  </div>
+</section>
+
+<!-- 4. GREATNESS TAKES GUTS + AUTHORITY MAP + AUTHORITY LAB -->
 <section class="dark" id="guts">
   <div class="wrap reveal">
     <h2 class="guts-head">Greatness Takes GUTS™</h2>
-    <p class="guts-sub">The Get Unstuck Transformation System. Three nights to get you out of your own way.</p>
-    <div class="guts-intro">
-      <p>You're too smart to be the only thing standing in your way. That's what these three nights are for.</p>
-      <p>Not fixing you. Recognizing exactly where the gap is between who you know yourself to be and who you've been letting the world see. And closing it.</p>
-      <p class="last">Three nights. One gap. Here's how we close it.</p>
-    </div>
+    <p class="guts-sub">The Get Unstuck Transformation System.</p>
+    <p style="text-align:center;font-family:var(--font-display);font-size:1.3rem;color:var(--gold-lt);margin:0 0 10px;">Three nights. One gap. Let's close it.</p>
+    <p style="text-align:center;color:rgba(247,242,232,.85);max-width:600px;margin:0 auto 44px;">In three live nights, you'll identify what's been keeping you stuck, uncover the Gift you've been overlooking, put language around the value it creates, and build your Next-Level Authority Map™, so you leave knowing what you bring, why it matters and how you're going to start letting more people experience it.</p>
     <div class="day-cards">
       <div class="day-card d1">
         <div class="tag">Day 1 · Unlearn</div>
         <h3>See What's Actually Been Running You</h3>
         <p class="core-q">The question: what have I been believing that's keeping me stuck?</p>
-        <p class="core-q-a">Maybe you've been treating every stalled result like a strategy problem. Maybe you've been waiting to feel more confident. Maybe you've learned rules about how much space you're allowed to take up, what you're allowed to want, what you're allowed to charge, say, ask for or pursue. Day 1 isn't about figuring out what's "wrong" with you. It's about seeing what's been influencing how you show up so you can stop automatically solving the wrong problem.</p>
+        <p class="core-q-a">Day 1 isn't about figuring out what's "wrong" with you. It's about seeing what's been influencing how you show up, so you can stop automatically solving the wrong problem.</p>
         <div class="day-leave-label">You'll leave Day 1 with:</div>
-        <p class="day-leave-text">Your Authority Gap identified. You'll see exactly where what you know you're capable of and what you're currently owning and expressing don't match. You'll identify at least one belief, rule or pattern you no longer want making your decisions for you. You'll complete your first Real Authority Rep, and begin plotting the SEE IT section of your Next-Level Authority Map™.</p>
+        <p class="day-leave-text">Your Authority Gap identified. You'll see exactly where what you know you're capable of and what you're currently owning and expressing don't match. You'll identify at least one belief, rule or pattern you no longer want making your decisions for you, complete your first Real Authority Rep, and begin plotting the SEE IT section of your Next-Level Authority Map™.</p>
+        <p class="core-q" style="margin-top:14px;margin-bottom:0;">DAY 1: I SEE.</p>
       </div>
       <div class="day-card d2">
         <div class="tag">Day 2 · Unlock</div>
-        <h3>Own What You've Been Overlooking</h3>
-        <p class="core-q">The question: what is actually true?</p>
-        <p class="core-q-a">This is where we stop obsessing over everything that needs fixing long enough to look at what's already working: your experience, your perspective, your strengths, your evidence, the things people already trust you for. Especially the things you've been calling "that's just what I do." Because the thing you do that you barely think about is often exactly what somebody else has been looking for. But we're not stopping at "yay, I'm gifted." We're going to ask: so what? How does what you naturally bring actually help somebody?</p>
+        <h3>Uncover the Gift You've Been Overlooking</h3>
+        <p class="core-q">The question: what is actually true about what I bring?</p>
+        <p class="core-q-a">This is where we stop obsessing over everything that needs fixing long enough to look at what's already there. We go underneath your job title, skills and experience for the recurring pattern in how you create value: what you do naturally, what people repeatedly come to you for, what gets better, clearer, easier or more possible because you're in the room. That's where your Gift starts leaving fingerprints. Then we ask the question that matters: so what? Because being gifted isn't enough. We connect your Gift to the outcome it creates and the value that outcome has for somebody else.</p>
         <div class="day-leave-label">You'll leave Day 2 with:</div>
-        <p class="day-leave-text">Evidence of what you really bring to the table. You'll identify the strengths, experience, perspective, expertise and natural ability you've been undercounting, and begin putting language to your value. You'll complete your second Real Authority Rep, and finish the OWN IT section of your Next-Level Authority Map™.</p>
+        <p class="day-leave-text">A clearer understanding of your Gift and language for why it matters. You leave Day 2 with language. Real language. Not "I'm passionate about helping people." You'll begin translating Gift → Outcome → Value, so you can stop calling something extraordinary "just what I do." You'll complete your second Real Authority Rep and add what you've discovered to the OWN IT section of your Map™.</p>
+        <p class="core-q" style="margin-top:14px;margin-bottom:0;">DAY 2: I OWN.</p>
       </div>
       <div class="day-card d3">
         <div class="tag">Day 3 · Unleash</div>
         <h3>Let People Experience It</h3>
         <p class="core-q">The question: how does the person who knows this move?</p>
-        <p class="core-q-a">Inner authority isn't enough. You can know your worth, know your value, know exactly what you bring, and still be invisible if nobody else ever feels it. Authority only becomes real when it moves from something you know about yourself into something someone else experiences. That might mean making the ask, sending the follow-up, publishing the post, raising your hand, having the sales conversation, asking for the promotion, or finally saying what you actually do without shrinking it. Your move may look different from somebody else's. But everybody moves.</p>
+        <p class="core-q-a">Inner authority isn't enough. Authority only becomes real when it moves from something you know about yourself, your Gift and the value it creates, into something someone else experiences: the ask, the follow-up, the post, the raised hand, the sales conversation, saying what you actually do without shrinking it.</p>
         <div class="day-leave-label">You'll leave Day 3 with:</div>
-        <p class="day-leave-text">Your completed Next-Level Authority Map™. And your third Real Authority Rep, locked in with a who, what, when and first step, before you leave the room.</p>
+        <p class="day-leave-text">Before you leave Night 3, your move gets a person, an action, a date and a time. You'll put it on your calendar and take the first step before we leave the room, completing the MOVE IT section of your Next-Level Authority Map™.</p>
+        <p class="core-q" style="margin-top:14px;margin-bottom:0;">DAY 3: I MOVE.</p>
       </div>
     </div>
 
     <div class="live-block">
-      <h3 style="color:var(--cream);font-size:1.3rem;margin-bottom:14px;">This is live. And yes, we're actually doing the work.</h3>
-      <p>NLA is not a three-video course dropped into your inbox. We meet live online, September 22–24, 7:00 PM ET. Each night, I teach. You work through guided exercises with me. You apply what you're learning to your actual life, career or business. We use chat, real examples, coaching and hot seats to bring the work off the page. And you add what you're discovering to your Next-Level Authority Map™ as we go.</p>
-      <p class="flow">The flow is simple: learn it, apply it, map it, move.</p>
-      <p>Plan for at least an hour each night. And if you're VIP, stay after the main session for additional Q&amp;A and personalized application.</p>
-    </div>
-
-    <div class="live-block">
-      <p>And be very clear. This isn't just three nights of "that was so good." Yes, I want you to see yourself differently. But I also want you to be able to point to what changed.</p>
-      <p>Over the three nights, you'll use your workbook to uncover the pieces, then plot what matters onto your Next-Level Authority Map™.</p>
+      <p>Three live nights with me. Not a course sitting in your inbox collecting dust. This is live: September 22–24, 7:00 PM ET each night. I teach, you work through guided exercises with me, we use chat, real examples, coaching and hot seats to bring it off the page. Plan for at least an hour each night; VIP stays after for Q&amp;A and personalized application.</p>
     </div>
 
     <div class="map-block">
-      <h3>Your Next-Level Authority Map™: See it. Own it. Move with it.</h3>
-      <p>This is what you leave with. Not 28 pages of exercises you'll never revisit. One page. What you want, what you've been overlooking, what you know now, what you're ready to express, what you're doing next.</p>
-      <p style="margin-bottom:0;">Something you can keep. Something you can show someone. Something you can use.</p>
+      <h3>Your Next-Level Authority Map™: see it, own it, move with it.</h3>
+      <p style="margin-bottom:0;">Not 28 pages of exercises you'll never revisit, one page. What you want, what you've been overlooking, what you know now, what you're ready to express, what you're doing next. Something you can keep, show someone, and use.</p>
     </div>
 
+    <div class="map-block">
+      <span class="lab-tag">Register now and also receive</span>
+      <h3>Lifetime membership to the Authority Lab™ community</h3>
+      <p style="margin-bottom:0;">($197/year value, yours free for life.) Insight doesn't hold up on its own, it needs somewhere to live. Authority Lab™ is a place to keep practicing what you built here, bring your questions, and stay around people doing the same work.</p>
+    </div>
+    <div class="lab-band" role="img" aria-label="A community of GameChangers connecting inside Authority Lab" style="margin-top:24px;max-width:680px;margin-left:auto;margin-right:auto;"></div>
+
     <div class="cta-row">
-      <a class="btn btn-gold" href="#pricing">I'M READY TO STOP BEING THE BEST-KEPT SECRET →</a>
+      <a class="btn btn-gold" href="#pricing">COUNT ME IN →</a>
     </div>
   </div>
 </section>
 
-<!-- WHO THIS IS FOR: revised per Sept 19 handoff -->
+<!-- 5. WHO THIS IS FOR, trimmed -->
 <section id="who-for">
   <div class="wrap reveal">
     <h2 class="center">Let me tell you exactly who I built this for.</h2>
-    <p class="lede center" style="max-width:700px;">This is for the person who's good. Like really good at what you do. You've got skills, talents, degrees, experience, expertise, results, perspective, a body of work, people who trust you, a business, career or bigger opportunity, and you're ready to grow it to the next level.</p>
-    <p class="q center" style="margin-bottom:8px;">But you're stuck.</p>
-    <p class="lede center" style="max-width:700px;">Not stuck because you don't know what you're doing. Stuck because somewhere along the way you learned to make yourself smaller than your actual skill level. You've been playing it safe in a life that was built for more.</p>
+    <p class="lede center" style="max-width:700px;">This is for the person who's good, really good, at what you do. You've got the skills, the experience, the results, the people who trust you. And you're ready to grow it to the next level. But you're stuck. Not because you don't know what you're doing. Because somewhere along the way you learned to make yourself smaller than your actual skill level.</p>
     <div class="audience-band" role="img" aria-label="A diverse group of entrepreneurs, professionals, coaches and leaders"></div>
-    <p class="lede center" style="max-width:700px;font-weight:700;color:var(--ink);">Here's how you know I'm talking to you:</p>
+    <p class="lede center" style="max-width:700px;font-weight:700;color:var(--ink);margin-bottom:14px;">Here's how you know I'm talking to you:</p>
     <ul class="who-check">
-      <li>You know what to do. You're just not doing it consistently, and you can't quite explain why.</li>
-      <li>You watch people with half your experience get twice your visibility, and it makes something in you tighten up that you don't say out loud.</li>
-      <li>You want to be seen more. And then the second the opportunity shows up, you find twelve reasons it's not the right time.</li>
-      <li>You're tired. Not the tired that a vacation fixes. The tired that comes from performing a smaller version of yourself, over and over, because it feels safer than the real one.</li>
-      <li>You've made your expertise sound generic so it wouldn't sound like bragging. And now nobody can tell what actually makes you different.</li>
-      <li>You want more money. More opportunity. More recognition. And you have complicated feelings about wanting it, like maybe it's not okay to want that much.</li>
-      <li>And real talk: you've done the personal growth work. You've read the books. You've sat in the seminars. You are DONE working on yourself in theory. You're ready to actually move.</li>
+      <li>You've watched people with less experience get opportunities you know you're capable of handling, and yeah... it makes your jaw a little tight.</li>
+      <li>You've made your expertise sound generic so it wouldn't sound like bragging, and now nobody can tell what actually makes you different.</li>
+      <li>You've done the personal growth work. Read the books. Sat in the seminars. You're done working on yourself in theory. You're ready to actually move.</li>
     </ul>
+    <div class="not-for">
+      <p><b>This isn't for you if</b> you're just starting out and still figuring out what you even do. NLA is for people who already have the skills, the results and the experience, and just haven't started owning it out loud yet.</p>
+    </div>
     <div class="who-close">
-      <p>If any of that just made you go quiet for a second... good. That's not an accident. That's you finally being seen.</p>
       <p>You don't have to wait for life to corner you before you decide to change. You get to decide right now:</p>
       <p class="decide">THIS IS WHO I AM. THIS IS WHAT I WANT.</p>
       <p>And then you get to move like you actually believe it.</p>
+      <p>Nobody else can own your authority for you. But you don't have to figure out how to articulate and express it alone.</p>
     </div>
     <div class="cta-row">
-      <a class="btn btn-primary" href="https://api.leadconnectorhq.com/widget/form/irAOqgmdgBNCtmrZBQaf">YES. I'M READY TO GET UNSTUCK</a>
+      <a class="btn btn-primary" href="https://api.leadconnectorhq.com/widget/form/irAOqgmdgBNCtmrZBQaf">YES, I'M READY TO GET UNSTUCK</a>
     </div>
   </div>
 </section>
 
-<!-- REAL RESULTS: new -->
+<!-- 6. REAL RESULTS -->
 <section class="soft" id="results">
   <div class="wrap reveal">
     <h2 class="center">What happens when you stop discounting what you bring?</h2>
@@ -580,21 +450,21 @@
       </div>
       <div class="testi-card">
         <p class="testi-quote">“I thought I had a marketing problem. What I actually had was an identity ceiling.”</p>
-        <p class="testi-result">Marcus J. — Executive Coach. <b>Result:</b> Launched his signature offer. Sold out in 3 weeks.</p>
+        <p class="testi-result">Marcus J., Executive Coach. <b>Result:</b> Launched his signature offer. Sold out in 3 weeks.</p>
       </div>
       <div class="testi-card">
         <p class="testi-quote">“Three years in business and I couldn't explain what I did without rambling. Now I have one clear message.”</p>
-        <p class="testi-result">Simone T. — Business Strategist. <b>Result:</b> 2 premium clients in 6 weeks.</p>
+        <p class="testi-result">Simone T., Business Strategist. <b>Result:</b> 2 premium clients in 6 weeks.</p>
       </div>
       <div class="testi-card">
         <p class="testi-quote">“I stopped hiding. That's honestly the simplest way to say it.”</p>
-        <p class="testi-result">Aaliyah R. — Wellness Expert &amp; Speaker. <b>Result:</b> 3x visibility and her first booked speaking gig.</p>
+        <p class="testi-result">Aaliyah R., Wellness Expert &amp; Speaker. <b>Result:</b> 3x visibility and her first booked speaking gig.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT YOUR GUIDE: light trim per Sept 19 handoff -->
+<!-- 7. ABOUT YOUR GUIDE -->
 <section id="about">
   <div class="wrap reveal">
     <div class="about-grid">
@@ -603,36 +473,21 @@
         <div class="eyebrow">About Your Guide</div>
         <h2 style="margin-bottom:16px;">I didn't build this because I woke up wanting to be a coach.</h2>
         <p>I built it because I did everything "right" and it still wasn't working.</p>
-        <p>The trainings. The courses. The best coaches money could buy. I implemented every strategy I was handed. I had some success. Just not the kind that matched what I was actually capable of.</p>
-        <p>So I got honest and asked one question: what do all of these rooms, programs and coaches have in common?</p>
-        <p>Me. I was the only constant. The me behind the business had to change. Not the strategy.</p>
-        <p class="quote" style="font-size:1.15rem;">Your business will never outgrow your identity.</p>
-        <p>Because the world can't respond to greatness it cannot see, understand or experience. You can have the best strategy on the planet and it still won't work if the person executing it hasn't closed the gap between who they are and what they're willing to show.</p>
-        <p>That realization changed everything. And that's why I created The Business of Greatness™: to help other brilliant people do it way faster than it took me.</p>
+        <p>The trainings. The courses. The best coaches money could buy. I implemented every strategy I was handed. I had some success, just not the kind that matched what I was actually capable of.</p>
+        <p>So I got honest and asked one question: what do all of these rooms, programs and coaches have in common? Me. I was the constant. So I had to look at me. Not because something was wrong with me. I wasn't broken, I just didn't know what I didn't know. The me behind the business had to change. Not the strategy. I had to learn to stop being "normal" and own my greatness! That affected how I showed up, what I was willing to say, and how I marketed and sold in my business. And that changed everything.</p>
+        <p class="quote" style="font-size:1.15rem;">Friend, your business will never outgrow your identity.</p>
+        <p>That realization is why I created The Business of Greatness™: to help other brilliant people close that gap way faster than it took me.</p>
         <p class="quote">And that's why NLA doesn't start with another tactic. It starts by helping you see what has been there all along, and moving from there.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- YOUR BONUS: AUTHORITY LAB, revised per Sept 19 handoff -->
-<section class="soft" id="authority-lab">
+<!-- 8. PRICING, with registration deadline -->
+<section class="soft" id="pricing">
   <div class="wrap reveal">
-    <h2 class="center">When the challenge ends, the work doesn't stop.</h2>
-    <p class="lede center">During the three nights, you'll work inside your GUTS™ Workbook, live, alongside me. And by the end, you'll have your completed Next-Level Authority Map™: a one-page picture of what you bring, why it matters and what you're doing next. Built across three nights, so you leave with something you'll actually use, not pages of exercises you never open again.</p>
-    <div class="lab-bonus-box">
-      <span class="tag">Register now and also receive</span>
-      <h3>Lifetime membership to the Authority Lab™ community</h3>
-      <p>($197/year value, yours free, for life.) Insight doesn't hold up on its own. It needs somewhere to live. That's what Authority Lab™ is: a place to keep practicing what you built here, bring your questions and stay around people doing the same work. Real people. Real conversations. Real progress.</p>
-    </div>
-    <div class="lab-band" role="img" aria-label="A community of GameChangers connecting inside Authority Lab"></div>
-  </div>
-</section>
-
-<!-- PRICING: revised per Sept 19 handoff -->
-<section id="pricing">
-  <div class="wrap reveal">
-    <h2 class="center">Choose Your Experience.</h2>
+    <p class="lede center" style="max-width:600px;">Quick context before you look at the numbers below: working with me privately starts at $4,500. This starts at $97.</p>
+    <h2 class="center">Choose Your Experience</h2>
     <div class="price-cards">
       <div class="price-card gen">
         <div class="tier">General Admission</div>
@@ -640,87 +495,84 @@
         <div class="desc">The complete 3-day NLA experience.</div>
         <ul>
           <li><b>Training:</b> Three days of LIVE Next-Level Authority Training with Tiesha, September 22–24 at 7:00 PM ET</li>
-          <li><b>Next-Level Authority Challenge™ Workbook:</b> how you'll do the work during all three sessions</li>
-          <li>Your completed <b>Next-Level Authority Map™</b>, yours to keep</li>
+          <li><b>Workbook:</b> the Next-Level Authority Challenge™ Workbook, how you'll do the work during all three sessions</li>
+          <li><b>Your Map™:</b> your completed Next-Level Authority Map™, yours to keep</li>
           <li><b>Real Authority Reps:</b> practice, own and move, on your terms</li>
           <li><b>Replay:</b> 30-day NLA replay access</li>
-          <li><b>Bonus:</b> Lifetime Authority Lab™ membership</li>
-          <li><b>Bonus Q&amp;A + Open Coaching</b>, Tuesday, September 29</li>
+          <li><b>Bonus Q&amp;A:</b> Open Coaching, Tuesday, September 29</li>
+          <li><b>Authority Lab™:</b> lifetime membership, yours free</li>
         </ul>
         <a class="btn btn-primary" href="https://api.leadconnectorhq.com/widget/form/irAOqgmdgBNCtmrZBQaf">I'M IN → $97</a>
       </div>
       <div class="price-card vip">
-        <div class="tier">VIP</div>
+        <div class="tier">VIP <span style="font-weight:400;text-transform:none;letter-spacing:0;">(limited spots available)</span></div>
         <div class="amount">$197</div>
         <div class="desc">Everything in General, plus more personalized application.</div>
         <ul>
           <li><b>Replay:</b> Lifetime NLA replay access</li>
-          <li><b>Direct coaching from Tiesha</b> after each main session: personalized, on-the-spot coaching where Tiesha answers your authority and business questions directly, so you see how these principles change the game for you in real time</li>
-          <li><b>Personalized feedback:</b> sometimes you're simply too close to your own brilliance to see what someone else can see immediately. Bring the question, idea, message or situation and borrow my perspective</li>
+          <li><b>Direct coaching from Tiesha:</b> personalized, on-the-spot coaching after each main session, where Tiesha answers your authority and business questions directly</li>
+          <li><b>Personalized feedback:</b> sometimes you're too close to your own brilliance to see what someone else can see immediately. Bring the question, idea, message or situation and borrow my perspective</li>
         </ul>
         <a class="btn btn-gold" href="https://api.leadconnectorhq.com/widget/form/8KpmIDokQFsZQULLkNJ6">ENROLL AS VIP → $197</a>
       </div>
     </div>
-    <div class="price-flip"><p>GENERAL gives you the full NLA experience. VIP adds personalized application, feedback and lifetime replay access.</p></div>
+    <div class="price-flip"><p>GENERAL gives you the full NLA experience. VIP adds personalized application, feedback and lifetime replay access, in a group kept intentionally small.</p></div>
+    <p class="reg-deadline">Registration closes September 22 at 7:00 PM ET, when Day 1 begins. After that, this round is done. If you're ready to stop being the best-kept secret and get momentum towards your next level, don't wait.</p>
   </div>
 </section>
 
-<!-- BONUS Q&A + GUARANTEE: consolidated per Sept 19 handoff -->
-<section class="soft" id="bonus-qa">
+<!-- 9. MY PERSONAL GUARANTEE -->
+<section>
   <div class="wrap-narrow reveal">
-    <div class="qa-guarantee-split">
-      <div>
-        <h2 class="center">Because sometimes the real question shows up three days later.</h2>
-        <p class="center" style="font-family:var(--font-display);font-size:1.2rem;color:var(--green);margin:14px 0 26px;">Bonus Q&amp;A + Open Coaching — Tuesday, September 29</p>
-        <p class="lede center" style="margin-bottom:6px;">You'll leave Day 3 fired up. And then real life will have the audacity to resume.</p>
-        <p class="lede center">Your inbox will still be there. Somebody will annoy you. You'll get an opportunity and immediately start overthinking it. You may even catch yourself doing the exact thing we just spent three nights talking about.</p>
-        <p class="q-strong" style="text-align:center;margin:14px 0;">Good. Bring it back to me.</p>
-        <p class="lede center">We're getting together again for Bonus Q&amp;A + Open Coaching so you can bring what happened when the breakthrough met real life. Questions. Stuck points. Decisions. Wins.</p>
-        <p class="lede center" style="margin-bottom:0;">“Tiesha, I did the thing and now WHAT?” Bring it.</p>
-      </div>
-      <div class="guarantee-block">
-        <div class="icon">🛡️</div>
-        <h3>Come to Day 1. Experience it for yourself.</h3>
-        <p>If you're not blown away after Day 1, request your refund by 5:00 PM ET the next day, before Day 2 begins.</p>
-        <div class="guarantee-caps">NO HOOPS. NO CONVINCING. NO HARD FEELINGS.</div>
-      </div>
+    <div class="guarantee-block">
+      <div class="icon">🛡️</div>
+      <h3>My Personal Guarantee</h3>
+      <p>Come to Day 1 and see for yourself. If you're not blown away, request your refund by 5:00 PM ET the next day, before Day 2 begins.</p>
+      <div class="guarantee-caps">NO HOOPS. NO CONVINCING. NO HARD FEELINGS.</div>
     </div>
   </div>
 </section>
 
-<!-- FAQ: trimmed to 4 per Sept 19 handoff -->
+<!-- 10. BONUS Q&A + OPEN COACHING -->
+<section class="soft" id="bonus-qa">
+  <div class="wrap-narrow reveal">
+    <h2 class="center">Bonus Q&amp;A + Open Coaching, Tuesday, September 29</h2>
+    <p class="lede center">You'll leave Day 3 fired up. Then real life resumes, your inbox, somebody who annoys you, an opportunity you immediately start overthinking.</p>
+    <p class="q-strong" style="text-align:center;color:var(--green);margin:10px 0;">Good. Bring it back to me.</p>
+    <p class="lede center" style="margin-bottom:0;">We're getting together again so you can bring what happened when the breakthrough met real life. “Tiesha, I did the thing and now WHAT?” Bring it.</p>
+  </div>
+</section>
+
+<!-- 11. FAQ -->
 <section id="faq">
   <div class="wrap reveal">
     <h2 class="center">Frequently Asked Questions</h2>
     <div class="faq-list">
       <details class="faq-item"><summary>What if I can't attend live?</summary><div class="a">General gets 30-day replay access, VIP gets lifetime replay access inside Authority Lab™. You won't miss anything, but the live room, with live Q&amp;A, is where the real movement tends to happen. Show up if you can.</div></details>
-      <details class="faq-item"><summary>What's the difference between General and VIP?</summary><div class="a">General gives you the complete three-day experience: three live nights, your workbook, your Authority Map, your Real Authority Reps and the Authority Lab bonus. VIP adds live after-session Q&amp;A each night, personalized feedback on your specific situation and lifetime replay access.</div></details>
-      <details class="faq-item"><summary>I've done a lot of personal development, how is this different?</summary><div class="a">Most personal development work asks you to fix or heal something. This doesn't. We're not digging into your past, we're identifying the specific gap between who you already know yourself to be and what you're currently letting the world see, and closing it in three nights, with a Map and a real-world move to show for it. It's less therapy, more construction.</div></details>
-      <details class="faq-item"><summary>What's included when I register?</summary><div class="a">Three live nights (September 22–24), your Next-Level Authority Challenge™ Workbook, your completed Next-Level Authority Map™, Bonus Q&amp;A + Open Coaching on September 29, your replay access (30-day or lifetime depending on tier), and one bonus: lifetime Authority Lab™ membership.</div></details>
+      <details class="faq-item"><summary>What's the difference between General and VIP?</summary><div class="a">General gets you the full 3-day NLA experience: training, workbook, your completed Map™, Real Authority Reps, 30-day replay, and lifetime Authority Lab™ access. VIP adds lifetime replay access, live coaching from me right after each session, and personalized feedback on your actual message, offer, or situation.</div></details>
+      <details class="faq-item"><summary>I've done a lot of personal development. How is this different?</summary><div class="a">We don't stop at insight. Every night moves you from what you're seeing to something you're practicing, expressing or putting into action. And you leave with a completed Map™ to keep the progress going, not just a new way of thinking about yourself.</div></details>
+      <details class="faq-item"><summary>What's included when I register?</summary><div class="a">Three live nights (September 22–24), your Next-Level Authority Challenge™ Workbook, your completed Next-Level Authority Map™, Bonus Q&amp;A + Open Coaching on September 29, a Real Authority Rep each night, your replay access (30-day or lifetime depending on tier), and lifetime membership to Authority Lab™. VIP also includes live coaching after each session and personalized feedback.</div></details>
     </div>
   </div>
 </section>
 
-<!-- FINAL CLOSE: revised per Sept 19 handoff -->
+<!-- 12. FINAL CTA -->
 <section class="final">
   <div class="final-bg"><img src="assets/img/closing.jpg" alt="Tiesha Green"/></div>
   <div class="final-overlay"></div>
   <div class="wrap final-inner reveal">
-    <h2>Three nights from now, I don't want you leaving with just notes.</h2>
+    <h2>After three nights in this challenge, you won't just be leaving with notes.</h2>
     <div class="final-copy">
-      <p>I want you leaving with a clearer answer to: what do I actually bring? Why does it matter? Where have I been hiding or discounting it? What do I want people to experience from me now? What am I going to do about it?</p>
-      <p>And I want the answers sitting right in front of you on your Next-Level Authority Map™.</p>
-      <p>Not because filling out a map changes your life. Using what you discover can.</p>
-      <p>So we won't stop with the map. You'll leave with your Real Authority Reps already in motion, including one out in the real world, already on your calendar.</p>
-      <p class="final-anchor">Working with me privately starts at $4,500 for six weeks. A seat in my Shift Groups is $4,000. This is $97.</p>
-      <p>Because your greatness was never meant to stay inside a workbook.</p>
-      <p style="font-family:var(--font-display);font-style:italic;font-size:1.3rem;color:var(--gold-lt);margin-top:14px;">YOUR GREATNESS HAS A JOB TO DO.</p>
+      <p>You'll leave with clear answers to: What Gift have I been overlooking? How does it create value? How am I going to let more people experience it?</p>
+      <p>And you won't have to hold onto those answers in your head, hoping you remember them later. They'll be sitting right in front of you, on your Next-Level Authority Map™.</p>
+      <p>Your gift was never meant to stay quiet or stay stuck. It has a job to do.</p>
+      <p class="reg-deadline" style="color:rgba(247,242,232,.7);">Registration closes September 22 at 7:00 PM ET, when Day 1 begins. After that, this round is done. If you're ready to stop being the best-kept secret and get momentum towards your next level, don't wait.</p>
     </div>
     <div class="final-name">
       <div class="big">NEXT-LEVEL AUTHORITY CHALLENGE™</div>
     </div>
     <div class="final-meta">September 22–24 | 7:00 PM ET | Live Online<br>Bonus Q&amp;A + Open Coaching: September 29</div>
-    <div style="text-align:center;margin-top:28px;">
+    <div style="text-align:center;margin-top:20px;">
       <a class="btn btn-gold" href="#pricing">I'M READY TO STOP BEING THE BEST-KEPT SECRET →</a>
     </div>
   </div>
